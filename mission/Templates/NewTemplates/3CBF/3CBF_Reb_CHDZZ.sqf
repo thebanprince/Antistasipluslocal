@@ -2,10 +2,10 @@
 //   Rebel Information   //
 ///////////////////////////
 
-["name", "FIA90"] call _fnc_saveToTemplate;
+["name", "ChDZZ"] call _fnc_saveToTemplate;
 
 ["flag", "Flag_CHD_Green"] call _fnc_saveToTemplate;
-["flagTexture", "\A3\Data_F\Flags\flag_FIA_CO.paa"] call _fnc_saveToTemplate;
+["flagTexture", "\UK3CB_Factions\addons\UK3CB_Factions_CHD\Flag\chd_flag_green_co.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "UK3CB_Marker_CHD_GREEN"] call _fnc_saveToTemplate;
 
 ["vehicleBasic", "I_G_Quadbike_01_F"] call _fnc_saveToTemplate;
