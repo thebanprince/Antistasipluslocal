@@ -24,7 +24,7 @@ private _terrainName = toLower worldName;
 //Reb Templates
 A3A_Reb_template = switch(true) do {
     case (A3A_has3CBFactions && {A3A_hasGlobMob}): {
-        ["Templates\NewTemplates\3CBF\GM_3CBF_Reb_FIA_CW.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
+        ["Templates\NewTemplates\GM_3CBF\GM_3CBF_Reb_FIA_CW.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using 3CBF CW Template", _filename] call A3A_fnc_log;
         "GM_3CBFactions"
     };
