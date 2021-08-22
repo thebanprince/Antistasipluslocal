@@ -2,8 +2,8 @@
 //   Side Information   //
 //////////////////////////
 
-["name", "NATO"] call _fnc_saveToTemplate; 						
-["spawnMarkerName", "NATO Support Corridor"] call _fnc_saveToTemplate; 
+["name", "ACF"] call _fnc_saveToTemplate; 						
+["spawnMarkerName", "ACF Support Corridor"] call _fnc_saveToTemplate; 
 
 ["flag", "Flag_NATO_F"] call _fnc_saveToTemplate; 						
 ["flagTexture", "\A3\Data_F\Flags\Flag_AltisColonial_F.paa"] call _fnc_saveToTemplate; 				
