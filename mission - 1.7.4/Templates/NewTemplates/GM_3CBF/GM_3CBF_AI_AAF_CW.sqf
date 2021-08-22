@@ -33,7 +33,7 @@
 	["military_medic", "B_AltisACF_Combat_Life_Saver_Altis_01"],
 	["military_engineer", "B_AltisACF_Repair_Specialist_Altis_01"],
 	["military_explosivesexpert", "B_AltisACF_Rifleman_Light_AT_Altis_01"],
-	["military_grenadier", "rhsusf_army_ocp_grenadier"],
+	["military_grenadier", "_AltisACF_Rifleman_Light_Altis_01"],
 	["military_lat", "B_AltisACF_Rifleman_Light_AT_Altis_01"],
 	["military_at", "B_AltisACF_Rifleman_AT_Altis_01"],
 	["military_aa", "B_AltisACF_Anti_Air_Altis_01"],
@@ -246,7 +246,7 @@ _loadoutData setVariable ["items_unarmed_extras", []];
 ///////////////////////////////////////
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_sfLoadoutData setVariable ["uniforms", ["UK3CB_CW_US_B_LATE_U_CombatUniform_01_WDL", "UK3CB_CW_US_B_LATE_U_CombatUniform_02_WDL", "UK3CB_CW_US_B_LATE_U_CombatUniform_03_WDL", "UK3CB_CW_US_B_LATE_U_CombatUniform_04_WDL", "UK3CB_CW_US_B_LATE_U_JNR_OFFICER_Uniform_01_WDL"]];			
+_sfLoadoutData setVariable ["uniforms", ["ACM_AAFGM_Clothes_BDU"]];			
 _sfLoadoutData setVariable ["vests", ["UK3CB_TKA_B_V_GA_LITE_WDL", "UK3CB_TKA_B_V_GA_HEAVY_WDL"]];										
 _sfLoadoutData setVariable ["backpacks", ["UK3CB_CW_US_B_LATE_B_RIF", "rhsgref_hidf_alicepack"]];			
 _sfLoadoutData setVariable ["helmets", ["UK3CB_CW_US_B_LATE_H_BoonieHat_WDL_01", "rhsgref_helmet_pasgt_woodland_rhino"]];				
@@ -301,7 +301,7 @@ _sfLoadoutData setVariable ["sidearms", [
 /////////////////////////////////
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_militaryLoadoutData setVariable ["uniforms", ["UK3CB_CW_US_B_LATE_U_CombatUniform_01_WDL", "UK3CB_CW_US_B_LATE_U_CombatUniform_02_WDL", "UK3CB_CW_US_B_LATE_U_CombatUniform_03_WDL", "UK3CB_CW_US_B_LATE_U_CombatUniform_04_WDL", "UK3CB_CW_US_B_LATE_U_JNR_OFFICER_Uniform_01_WDL"]];		
+_militaryLoadoutData setVariable ["uniforms", ["ACM_AAFGM_Clothes_BDU"]];		
 _militaryLoadoutData setVariable ["vests", ["UK3CB_CW_US_B_LATE_V_PASGT_Rif_Vest"]];			
 _militaryLoadoutData setVariable ["MGvests", ["UK3CB_CW_US_B_LATE_V_PASGT_MG_Vest"]];						
 _militaryLoadoutData setVariable ["MEDvests", ["UK3CB_CW_US_B_LATE_V_PASGT_Medic_Vest"]];
@@ -356,7 +356,7 @@ _militaryLoadoutData setVariable ["sidearms", [
 ///////////////////////////////
 
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_policeLoadoutData setVariable ["uniforms", ["gm_ge_army_uniform_soldier_80_oli", "gm_ge_army_uniform_soldier_gloves_80_ols", "gm_ge_army_uniform_soldier_parka_80_ols", "gm_ge_army_uniform_soldier_parka_80_oli"]];
+_policeLoadoutData setVariable ["uniforms", ["ACM_AAFGM_Clothes_AAF_DressUni"]];
 _policeLoadoutData setVariable ["vests", ["gm_ge_army_vest_80_mp_wht"]];
 _policeLoadoutData setVariable ["helmets", ["gm_ge_headgear_beret_red_militarypolice"]];
 _policeLoadoutData setVariable ["SMGs", [
@@ -374,7 +374,7 @@ _policeLoadoutData setVariable ["sidearms", [
 ////////////////////////////////
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_militiaLoadoutData setVariable ["uniforms", ["gm_ge_uniform_soldier_90_flk", "gm_ge_uniform_soldier_rolled_90_flk", "gm_ge_uniform_soldier_tshirt_90_flk"]];
+_militiaLoadoutData setVariable ["uniforms", ["ACM_AAFGM_Clothes_AFU_Snakeskin_autumn"]];
 _militiaLoadoutData setVariable ["vests", ["gm_ge_vest_90_leader_flk", "gm_ge_vest_90_rifleman_flk", "gm_ge_vest_armor_90_rifleman_flk"]];
 _militiaLoadoutData setVariable ["backpacks", ["gm_dk_army_backpack_73_oli", "gm_ge_army_backpack_80_oli"]];		
 _militiaLoadoutData setVariable ["helmets", ["rhsgref_helmet_M1_painted", "rhsgref_helmet_M1_painted_alt01", "gm_ge_headgear_hat_boonie_flk", "gm_ge_headgear_beret_grn_mechinf", "gm_ge_headgear_beret_crew_grn_mechinf"]];
@@ -420,7 +420,7 @@ _militiaLoadoutData setVariable ["smokeGrenades", ["gm_smokeshell_wht_dm25"]];
 //    Elite Loadout Data    //
 /////////////////////////////////
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_eliteLoadoutData setVariable ["uniforms", ["UK3CB_CW_US_B_LATE_U_CombatUniform_01_WDL", "UK3CB_CW_US_B_LATE_U_CombatUniform_02_WDL", "UK3CB_CW_US_B_LATE_U_CombatUniform_03_WDL", "UK3CB_CW_US_B_LATE_U_CombatUniform_04_WDL", "UK3CB_CW_US_B_LATE_U_JNR_OFFICER_Uniform_01_WDL"]];			
+_eliteLoadoutData setVariable ["uniforms", ["ACM_AAFGM_Clothes_BDU"]];			
 _eliteLoadoutData setVariable ["vests", ["UK3CB_TKA_B_V_GA_LITE_WDL", "UK3CB_TKA_B_V_GA_HEAVY_WDL"]];				
 _eliteLoadoutData setVariable ["backpacks", ["UK3CB_CW_US_B_LATE_B_RIF", "rhsgref_hidf_alicepack"]];			
 _eliteLoadoutData setVariable ["helmets", ["rhsgref_helmet_pasgt_woodland_rhino"]];				
@@ -477,7 +477,7 @@ _eliteLoadoutData setVariable ["missileATLaunchers", [
 //////////////////////////
 
 private _crewLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData; 
-_crewLoadoutData setVariable ["uniforms", ["UK3CB_CW_US_B_LATE_U_CombatUniform_01_WDL"]];			
+_crewLoadoutData setVariable ["uniforms", ["ACM_AAFGM_Clothes_BDU"]];			
 _crewLoadoutData setVariable ["vests", ["UK3CB_CW_US_B_LATE_V_PASGT_Crew_Vest"]];				
 _crewLoadoutData setVariable ["helmets", ["rhsusf_cvc_green_helmet", "rhsusf_cvc_green_alt_helmet", "rhsusf_cvc_helmet", "rhsusf_cvc_alt_helmet"]];			
 _crewLoadoutData setVariable ["carbines", [
