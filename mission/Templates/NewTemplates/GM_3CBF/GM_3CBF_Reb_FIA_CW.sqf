@@ -9,7 +9,7 @@
 ["flagMarkerType", "UK3CB_Marker_CHD_GREEN"] call _fnc_saveToTemplate; 			
 
 ["vehicleBasic", "I_G_Quadbike_01_F"] call _fnc_saveToTemplate; 			
-["vehicleLightUnarmed", "UK3CB_CHD_I_Hilux_Open"] call _fnc_saveToTemplate; 		
+["vehicleLightUnarmed", "ACM_APLIF_BRDM_Main_CO"] call _fnc_saveToTemplate; 		
 ["vehicleLightArmed", "UK3CB_CHD_I_Hilux_Dshkm"] call _fnc_saveToTemplate; 		
 ["vehicleTruck", "UK3CB_CHD_I_Gaz66_Open"] call _fnc_saveToTemplate; 			
 ["vehicleAT", "UK3CB_CHD_I_Hilux_Spg9"] call _fnc_saveToTemplate; 		

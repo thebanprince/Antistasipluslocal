@@ -117,7 +117,7 @@ A3A_Occ_template = switch(true) do {
         "Vanilla" //intentionally, as GM expands vanilla
     };
     case (A3A_has3CBFactions && {A3A_hasGlobMob}): {
-        ["Templates\NewTemplates\GM_3CBF\GM_3CBF_AI_NATO.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+        ["Templates\NewTemplates\GM_3CBF\GM_3CBF_AI_AAF_CW.sqf", west] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using GM_3CBF NATO Cold War Template", _filename] call A3A_fnc_log;
         "3CBFactions_GM"
     };
