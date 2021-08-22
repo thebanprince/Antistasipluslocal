@@ -5,9 +5,9 @@
 ["name", "ACF"] call _fnc_saveToTemplate; 						
 ["spawnMarkerName", "ACF Support Corridor"] call _fnc_saveToTemplate; 
 
-["flag", "Flag_NATO_F"] call _fnc_saveToTemplate; 						
-["flagTexture", "\A3\Data_F\Flags\Flag_AltisColonial_F.paa"] call _fnc_saveToTemplate; 				
-["flagMarkerType", "flag_AltisColonial_F"] call _fnc_saveToTemplate; 				
+["flag", "flag_AltisColonial"] call _fnc_saveToTemplate; 						
+["flagTexture", "\A3\Data_F\Flags\flag_AltisColonial_CO.paa"] call _fnc_saveToTemplate; 				
+["flagMarkerType", "flag_AltisColonial"] call _fnc_saveToTemplate; 				
 
 //////////////////////////////////////
 //       Antistasi Plus Stuff       //
