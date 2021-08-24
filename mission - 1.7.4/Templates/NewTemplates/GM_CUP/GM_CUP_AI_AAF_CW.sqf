@@ -55,13 +55,13 @@
 	["elite_marksman", "B_AltisACF_Marksman_Altis_01"],
 	["elite_sniper", "B_AltisACF_Marksman_Altis_01"],
 
-	["sf_squadleader", "rhsusf_socom_marsoc_teamleader"],
-	["sf_rifleman", "rhsusf_socom_marsoc_cso"],
-	["sf_radioman", "rhsusf_socom_marsoc_cso"],
-	["sf_medic", "rhsusf_socom_marsoc_sarc"],
-	["sf_engineer", "rhsusf_socom_marsoc_cso_mechanic"],
-	["sf_explosivesexpert", "rhsusf_army_ocp_explosives"],
-	["sf_grenadier", "rhsusf_socom_marsoc_cso_grenadier"],
+	["sf_squadleader", "B_AltisACF_Team_Leader_Altis_01"],
+	["sf_rifleman", "B_AltisACF_Rifleman_Altis_01"],
+	["sf_radioman", "B_AltisACF_Rifleman_Altis_01"],
+	["sf_medic", "B_AltisACF_Combat_Life_Saver_Altis_01"],
+	["sf_engineer", "B_AltisACF_Rifleman_Altis_01_mechanic"],
+	["sf_explosivesexpert", "B_AltisACF_Rifleman_Altis_01"],
+	["sf_grenadier", "B_AltisACF_Rifleman_Altis_01_grenadier"],
 	["sf_lat", "B_AltisACF_Rifleman_AT_Altis_01"],
 	["sf_at", "B_AltisACF_Rifleman_AT_Altis_01"],
 	["sf_aa", "B_AltisACF_Anti_Air_Altis_01"],
@@ -69,13 +69,13 @@
 	["sf_marksman", "B_AltisACF_Marksman_Altis_01"],
 	["sf_sniper", "B_AltisACF_Marksman_Altis_01"],
 
-	["other_crew", "rhsusf_army_ucp_crewman"],
-	["other_unarmed", "B_Survivor_F"],
-	["other_official", "rhsusf_army_ucp_officer"],
-	["other_traitor", "B_G_Soldier_F"],
-	["other_pilot", "rhsusf_army_ucp_helipilot"],
-	["police_squadleader", "gm_ge_army_militarypolice_p1_80_oli"],
-	["police_standard", "gm_ge_army_militarypolice_p1_80_oli"]
+	["other_crew", "B_AltisACF_Crew_Altis_01"],
+	["other_unarmed", "B_AltisACF_Survivor_Altis_01"],
+	["other_official", "B_AltisACF_Dress_Uniform_Altis_01"],
+	["other_traitor", "BB_AltisACF_Survivor_Altis_01"],
+	["other_pilot", "B_AltisACF_Helicopter_Pilot_Altis_01"],
+	["police_squadleader", "B_AltisACF_Military_Police_Combat_Altis_01"],
+	["police_standard", "B_AltisACF_Military_Police_Combat_Altis_01"]
 ]] call _fnc_saveToTemplate;
 
 //////////////////////////
