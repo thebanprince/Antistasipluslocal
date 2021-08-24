@@ -74,11 +74,11 @@ A3A_Reb_template = switch(true) do {
         switch(true) do {
             case (_terrainName in _temperateMaps);
             case (_terrainName in tropicalMaps): {
-                ["Templates\NewTemplates\Cup\Cup_Reb_NAPA_Temperate.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
+                ["Templates\NewTemplates\GM_CUP\GM_CUP_Reb_FIA_CW.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
                 [2, "Using Temperate NAPA Template", _filename] call A3A_fnc_log;
             };
             default {
-                ["Templates\NewTemplates\CUP\CUP_Reb_FIA_Arid.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
+                ["Templates\NewTemplates\GM_CUP\GM_CUP_Reb_FIA_CW.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
                 [2, "Using arid FIA Templates", _filename] call A3A_fnc_log;
             };
         };
@@ -89,7 +89,7 @@ A3A_Reb_template = switch(true) do {
         switch(true) do {
             case (_terrainName in _temperateMaps);
             case (_terrainName in tropicalMaps): {
-                ["Templates\NewTemplates\Cup\Cup_Reb_NAPA_Temperate.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
+                ["Templates\NewTemplates\GM_CUP\GM_CUP_Reb_FIA_CW.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
                 [2, "Using Temperate NAPA Template", _filename] call A3A_fnc_log;
             };
             default {
@@ -205,11 +205,11 @@ A3A_Occ_template = switch(true) do {
                         [2, "Using tropical USAF Template", _filename] call A3A_fnc_log;
                     };
                     case (_terrainName in _temperateMaps): {
-                        ["Templates\NewTemplates\CUP\CUP_AI_USAF_Temperate.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+                        ["Templates\NewTemplates\GM_CUP\GM_CUP_AI_AAF_CW.sqf", west] call A3A_fnc_compatibilityLoadFaction;
                         [2, "Using arctic USAF Template", _filename] call A3A_fnc_log;
                     };
                     default {
-                        ["Templates\NewTemplates\CUP\Cup_AI_USAF_Arid.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+                        ["Templates\NewTemplates\GM_CUP\GM_CUP_AI_AAF_CW.sqf", west] call A3A_fnc_compatibilityLoadFaction;
                         [2, "Using arid USAF Templates", _filename] call A3A_fnc_log;
                     };
                 };
