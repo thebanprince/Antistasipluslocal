@@ -248,6 +248,7 @@ A3A_Occ_template = switch(true) do {
         ["Templates\NewTemplates\GM_CUP\GM_CUP_AI_AAF_CW.sqf", west] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using CUP AAF 90s Cold War Template", _filename] call A3A_fnc_log;
         "CUP_GM"
+	};
 	
     case (A3A_hasAegis): {
         ["Templates\NewTemplates\Aegis\Aegis_AI_EUROFOR.sqf", west] call A3A_fnc_compatibilityLoadFaction;
