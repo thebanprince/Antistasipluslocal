@@ -86,19 +86,19 @@
 ["surrenderCrate", "Box_IND_Wps_F"] call _fnc_saveToTemplate; 
 ["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate; 
 
-["vehiclesBasic", ["B_Quadbike_01_F"]] call _fnc_saveToTemplate; 			
-["vehiclesLightUnarmed", ["CUP_B_LR_Transport_GB_D"]] call _fnc_saveToTemplate; 		
-["vehiclesLightArmed",["CUP_B_LR_Special_GMG_GB_D", "CUP_B_LR_Special_M2_GB_D", "CUP_B_Mastiff_GMG_GB_D", "CUP_B_Mastiff_HMG_GB_D", "CUP_B_Mastiff_LMG_GB_D", "CUP_B_Ridgback_GMG_GB_D", "CUP_B_Ridgback_HMG_GB_D", "CUP_B_Ridgback_LMG_GB_D", "CUP_B_Wolfhound_GMG_GB_D", "CUP_B_Wolfhound_HMG_GB_D", "CUP_B_Wolfhound_LMG_GB_D"]] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
-["vehiclesTrucks", ["CUP_B_MTVR_BAF_DES"]] call _fnc_saveToTemplate; 			
+["vehiclesBasic", ["B_AltisACF_K125_gl_Altis_01"]] call _fnc_saveToTemplate; 			
+["vehiclesLightUnarmed", ["class B_AltisACF_Truck_05t_tmil_gl_Altis_01"]] call _fnc_saveToTemplate; 		
+["vehiclesLightArmed",["B_AltisACF_Truck_05t_tmil_gl_LATGM_Altis_01", "CUP_B_LR_Special_M2_GB_D","CUP_B_LR_MG_GB_D" ]] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
+["vehiclesTrucks", ["B_AltisACF_Truck_5t_mil_gl_Transport_Altis_01"]] call _fnc_saveToTemplate; 			
 ["vehiclesCargoTrucks", ["B_T_Truck_01_cargo_F", "B_T_Truck_01_flatbed_F"]] call _fnc_saveToTemplate; 		
-["vehiclesAmmoTrucks", ["CUP_B_MTVR_Ammo_BAF_DES"]] call _fnc_saveToTemplate; 		
+["vehiclesAmmoTrucks", ["B_AltisACF_Truck_5t_mil_gl_Ammo_Altis_01"]] call _fnc_saveToTemplate; 		
 ["vehiclesRepairTrucks", ["CUP_B_MTVR_Repair_BAF_DES"]] call _fnc_saveToTemplate; 		
-["vehiclesFuelTrucks", ["CUP_B_MTVR_Refuel_BAF_DES"]] call _fnc_saveToTemplate;		
-["vehiclesMedical", ["CUP_B_LR_Ambulance_GB_D"]] call _fnc_saveToTemplate;			
-["vehiclesAPCs", ["CUP_B_FV510_GB_D_SLAT", "CUP_B_FV510_GB_D", "CUP_B_FV432_Bulldog_GB_D_RWS", "CUP_B_MCV80_GB_D_SLAT", "CUP_B_MCV80_GB_D"]] call _fnc_saveToTemplate; 				
-["vehiclesTanks", ["CUP_B_Challenger2_Desert_BAF", "CUP_B_Challenger2_2CD_BAF"]] call _fnc_saveToTemplate; 			
-["vehiclesAA", ["CUP_B_HMMWV_Avenger_USMC"]] call _fnc_saveToTemplate; 				
-["vehiclesLightAPCs", ["CUP_B_MCV80_GB_D"]] call _fnc_saveToTemplate;			
+["vehiclesFuelTrucks", ["B_AltisACF_Truck_5t_mil_gl_Fuel_Altis_01"]] call _fnc_saveToTemplate;		
+["vehiclesMedical", ["B_AltisACF_M113A1DK_Medical_Altis_01"]] call _fnc_saveToTemplate;			
+["vehiclesAPCs", ["B_AltisACF_M113A1DK_APC_Altis_01", "M113A1G APC LATGM", "M113A1DK Command"]] call _fnc_saveToTemplate; 				
+["vehiclesTanks", ["B_AltisACF_KPz_1A5_Altis_01", "B_AltisACF_KPz_1A3A1_Altis_01"]] call _fnc_saveToTemplate; 			
+["vehiclesAA", ["B_AltisACF_FlakPz_1A1_Altis_01"]] call _fnc_saveToTemplate; 				
+["vehiclesLightAPCs", ["B_AltisACF_TPz_1A0_Recon_Altis_01"]] call _fnc_saveToTemplate;			
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;				
 
 ["vehiclesSam", ["B_Radar_System_01_F","B_SAM_System_03_F"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
@@ -111,8 +111,8 @@
 ["vehiclesPlanesAA", ["CUP_B_F35B_BAF"]] call _fnc_saveToTemplate; 			
 ["vehiclesPlanesTransport", ["CUP_B_C130J_GB"]] call _fnc_saveToTemplate; 	
 
-["vehiclesHelisLight", ["CUP_B_AW159_Unarmed_RN_Grey", "CUP_B_AW159_Unarmed_GB", "CUP_B_AW159_Unarmed_RN_Blackcat"]] call _fnc_saveToTemplate; 		
-["vehiclesHelisTransport", ["CUP_B_AW159_Unarmed_RN_Grey", "CUP_B_AW159_Unarmed_GB", "CUP_B_AW159_Unarmed_RN_Blackcat","CUP_B_SA330_Puma_HC2_BAF", "CUP_B_Merlin_HC3_Armed_GB", "CUP_B_Merlin_HC3A_Armed_GB", "CUP_B_MH47E_GB"]] call _fnc_saveToTemplate; 	
+["vehiclesHelisLight", [ "B_AltisACF_VBH_1A1_Swooper_Altis_01", "B_AltisACF_MH_9Hummingbird_Altis_01"]] call _fnc_saveToTemplate; 		
+["vehiclesHelisTransport", ["B_AltisACF_CH_53G_Altis_01"]] call _fnc_saveToTemplate; 	
 ["vehiclesHelisAttack", ["CUP_B_AW159_RN_Blackcat", "CUP_B_AW159_GB", "CUP_B_AW159_RN_Grey", "CUP_B_AH1_DL_BAF"]] call _fnc_saveToTemplate; 		
 
 ["vehiclesArtillery", [
@@ -120,8 +120,8 @@
 ["CUP_B_M270_DPICM_BAF_WOOD",["CUP_12Rnd_MLRS_DPICM"]]
 ]] call _fnc_saveToTemplate; 		
 
-["uavsAttack", ["CUP_B_USMC_DYN_MQ9"]] call _fnc_saveToTemplate; 				
-["uavsPortable", ["B_UAV_01_F"]] call _fnc_saveToTemplate; 				
+["uavsAttack", []] call _fnc_saveToTemplate; 				
+["uavsPortable", []] call _fnc_saveToTemplate; 				
 
 
 ["vehiclesMilitiaLightArmed", ["CUP_B_LR_MG_GB_D", "CUP_B_Jackal2_L2A1_GB_D"]] call _fnc_saveToTemplate; 
