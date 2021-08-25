@@ -1919,45 +1919,7 @@ class CfgVehicles {
 
 };
 
-    class B_AltisACF_Repair_Specialist_Altis_01 : AAFGM_Soldier_Repair_OCimport_02 {
-        author = "Commander";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Repair Specialist";
-        side = 1;
-        faction = "b_altisacf";
 
-        identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
-
-        uniformClass = "ACM_AAFGM_Clothes_BDU_2";
-
-        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-
-        weapons[] = {"gm_m16a1_blk"};
-        respawnWeapons[] = {"gm_m16a1_blk"};
-
-        magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag"};
-        respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag"};
-
-        backpack = "AFGM_Fieldpack_Repair";
-
-        ALiVE_orbatCreator_loadout[] = {{"gm_m16a1_blk","","","",{"30Rnd_556x45_Stanag",30},{},""},{},{},{"ACM_AAFGM_Clothes_BDU_2",{{"gm_gc_army_medkit",1},{"30Rnd_556x45_Stanag",3,30}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{{"30Rnd_556x45_Stanag",4,30},{"gm_handgrenade_frag_dm51a1",1,1},{"gm_smokeshell_wht_dm25",1,1}}},{"AFGM_Fieldpack_Repair",{{"gm_repairkit_01",1},{"gm_explosive_petn_charge",1,1},{"gm_smokeshell_blu_gc",1,1},{"gm_smokeshell_grn_gc",1,1},{"gm_smokeshell_org_gc",1,1},{"gm_smokeshell_red_gc",1,1}}}," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
-
-
-        class EventHandlers : EventHandlers {
-            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-            class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-            };
-
-        };
-
-        // custom attributes (do not delete)
-        ALiVE_orbatCreator_owned = 1;
-
-    };
 
     class B_AltisACF_Survivor_Altis_01 : AAFGM_survivor_OCimport_02 {
         author = "Commander";
