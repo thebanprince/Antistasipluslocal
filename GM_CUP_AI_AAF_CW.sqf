@@ -253,14 +253,14 @@ _loadoutData setVariable ["items_unarmed_extras", []];
 
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_sfLoadoutData setVariable ["uniforms", ["CUP_U_B_BAF_DDPM_UBACSLONGKNEE", "CUP_U_B_BAF_DDPM_UBACSROLLED", "CUP_U_B_BAF_DDPM_UBACSROLLEDKNEE", "CUP_U_B_BAF_DDPM_UBACSTSHIRT", "CUP_U_B_BAF_DDPM_UBACSTSHIRTKNEE"]];	
-_sfLoadoutData setVariable ["vests", ["CUP_V_B_BAF_DDPM_Osprey_Mk3_AutomaticRifleman", "CUP_V_B_BAF_DDPM_Osprey_Mk3_Engineer", "CUP_V_B_BAF_DDPM_Osprey_Mk3_Medic", "CUP_V_B_BAF_DDPM_Osprey_Mk3_Officer", "CUP_V_B_BAF_DDPM_Osprey_Mk3_Rifleman"]];
-_sfLoadoutData setVariable ["Hvests", ["CUP_V_B_BAF_DDPM_Osprey_Mk3_Scout"]];
-_sfLoadoutData setVariable ["GLvests", ["CUP_V_B_BAF_DDPM_Osprey_Mk3_Grenadier"]];
-_sfLoadoutData setVariable ["backpacks", ["B_TacticalPack_blk","B_Kitbag_cbr", "CUP_B_Predator_Radio_MTP", "CUP_B_Predator_MTP"]];		
-_sfLoadoutData setVariable ["helmets", ["CUP_H_BAF_DDPM_Mk6_EMPTY", "CUP_H_BAF_DDPM_Mk6_EMPTY_PRR", "CUP_H_BAF_DDPM_Mk6_GLASS_PRR", "CUP_H_BAF_DDPM_Mk6_GOGGLES_PRR", "CUP_H_BAF_DDPM_Mk6_NETTING_PRR"]];		
+_sfLoadoutData setVariable ["uniforms", ["ACM_AAFGM_Clothes_AFU_Snakeskin"]];	 
+_sfLoadoutData setVariable ["vests", ["cwr3_b_uk_vest_58webbing" ]]; 
+_sfLoadoutData setVariable ["Hvests", ["ACM_AAFGM_Vest_Lizard_rifleman"]]; 
+_sfLoadoutData setVariable ["GLvests", ["gm_dk_army_vest_54_rifleman"]]; 
+_sfLoadoutData setVariable ["backpacks", ["cwr3_b_uk_backpack_ammo","cwr3_b_uk_backpack_l4a3"]];		 
+_sfLoadoutData setVariable ["helmets", ["cwr3_b_uk_headgear_mk5_helmet", "cwr3_b_uk_headgear_mk5_helmet_net", "cwr3_b_uk_headgear_mk5_helmet_dpm_net"]];		 
 _sfLoadoutData setVariable ["ATLaunchers", ["CUP_launch_NLAW"]];  
-_sfLoadoutData setVariable ["binoculars", ["CUP_LRTV"]];
+_sfLoadoutData setVariable ["binoculars", [""]];
 _sfLoadoutData setVariable ["lightATLaunchers", [
 	["CUP_launch_MAAWS", "", "", "CUP_optic_MAAWS_Scope", ["MRAWS_HEAT_F", "MRAWS_HE_F"], [], ""]
 ]];
