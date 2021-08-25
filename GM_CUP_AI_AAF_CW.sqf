@@ -113,15 +113,15 @@
 
 ["vehiclesHelisLight", ["ACM_AAFGM_PAH1", "ACM_AAFGM_Heli_Light_01"]] call _fnc_saveToTemplate; 		 
 ["vehiclesHelisTransport", ["ACM_AAFGM_ch53g", "ACM_AAFGM_PAH1", "CUP_B_Merlin_HC3A_Armed_GB"]] call _fnc_saveToTemplate; 	 
-["vehiclesHelisAttack", ["ACM_AAFGM_Heli_light_01_dynamicLoadout_F", "CUP_B_AH1_DL_BAF"]] call _fnc_saveToTemplate; 		
+["vehiclesHelisAttack", ["ACM_AAFGM_Heli_light_01_dynamicLoadout_F", "CUP_B_AH1_DL_BAF"]] call _fnc_saveToTemplate; 			
 
 ["vehiclesArtillery", [
 ["CUP_B_M270_DPICM_BAF_DES",["CUP_12Rnd_MLRS_HE"]],
 ["CUP_B_M270_DPICM_BAF_WOOD",["CUP_12Rnd_MLRS_DPICM"]]
 ]] call _fnc_saveToTemplate; 		
 
-["uavsAttack", ["CUP_B_USMC_DYN_MQ9"]] call _fnc_saveToTemplate; 				
-["uavsPortable", ["B_UAV_01_F"]] call _fnc_saveToTemplate; 				
+["uavsAttack", ["not_supported"]] call _fnc_saveToTemplate; 				
+["uavsPortable", ["not_supported"]] call _fnc_saveToTemplate; 				
 
 
 ["vehiclesMilitiaLightArmed", ["CUP_B_LR_MG_GB_D", "CUP_B_Jackal2_L2A1_GB_D"]] call _fnc_saveToTemplate; 
@@ -210,7 +210,7 @@ _loadoutData setVariable ["watches", ["ItemWatch"]];
 _loadoutData setVariable ["compasses", ["ItemCompass"]];
 _loadoutData setVariable ["radios", ["ItemRadio"]];
 _loadoutData setVariable ["gpses", ["ItemGPS"]];
-_loadoutData setVariable ["NVGs", ["CUP_NVG_PVS15_black"]];
+_loadoutData setVariable ["NVGs", []];
 _loadoutData setVariable ["binoculars", ["Binocular"]];		
 _loadoutData setVariable ["Rangefinder", ["Rangefinder"]];
 
@@ -229,7 +229,7 @@ _loadoutData setVariable ["items_medical_medic", ["MEDIC"] call A3A_fnc_itemset_
 _loadoutData setVariable ["items_miscEssentials", [] call A3A_fnc_itemset_miscEssentials];
 
 
-_loadoutData setVariable ["items_squadleader_extras", ["ACE_microDAGR", "ACE_DAGR", "Laserbatteries", "Laserbatteries", "Laserbatteries"]];
+_loadoutData setVariable ["items_squadleader_extras", []];
 _loadoutData setVariable ["items_rifleman_extras", []];
 _loadoutData setVariable ["items_medic_extras", []];
 _loadoutData setVariable ["items_grenadier_extras", []];
@@ -239,8 +239,8 @@ _loadoutData setVariable ["items_lat_extras", []];
 _loadoutData setVariable ["items_at_extras", []];
 _loadoutData setVariable ["items_aa_extras", []];
 _loadoutData setVariable ["items_machineGunner_extras", []];
-_loadoutData setVariable ["items_marksman_extras", ["ACE_RangeCard", "ACE_ATragMX", "ACE_Kestrel4500"]];
-_loadoutData setVariable ["items_sniper_extras", ["ACE_RangeCard", "ACE_ATragMX", "ACE_Kestrel4500"]];
+_loadoutData setVariable ["items_marksman_extras", ["ACE_RangeCard"]];
+_loadoutData setVariable ["items_sniper_extras", ["ACE_RangeCard"]];
 _loadoutData setVariable ["items_police_extras", []];
 _loadoutData setVariable ["items_crew_extras", []];
 _loadoutData setVariable ["items_unarmed_extras", []];
