@@ -127,8 +127,8 @@
 ["vehiclesMilitiaLightArmed", ["CUP_B_LR_MG_GB_D", "CUP_B_Jackal2_L2A1_GB_D"]] call _fnc_saveToTemplate; 
 ["vehiclesMilitiaTrucks", ["CUP_B_MTVR_BAF_DES"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaCars", ["CUP_B_LR_Transport_GB_D"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaApcs", ["CUP_B_BAF_Coyote_L2A1_D"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaTanks", ["CUP_B_FV432_Bulldog_GB_D"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaApcs", [""]] call _fnc_saveToTemplate;
+["vehiclesMilitiaTanks", [""]] call _fnc_saveToTemplate;
 
 ["vehiclesPolice", ["B_GEN_Offroad_01_gen_F"]] call _fnc_saveToTemplate;
 
@@ -169,7 +169,7 @@
 	["cup_blufor_EUROFOR_AT2_temp"] call A3A_fnc_getLoadout
 ]] call _fnc_saveToTemplate;
 
-["pvpVehicles", ["CUP_B_BAF_Coyote_L2A1_W", "CUP_B_Jackal2_L2A1_GB_W"]] call _fnc_saveToTemplate;
+["pvpVehicles", ["B_AltisACF_Truck_05t_tmil_gl_LATGM_Altis_01", "CUP_B_LR_Special_M2_GB_D"]] call _fnc_saveToTemplate;
 
 
 //////////////////////////
@@ -299,8 +299,8 @@ _sfLoadoutData setVariable ["sniperRifles", [
 ["CUP_srifle_M107_Base", "", "", "CUP_optic_LeupoldMk4_25x50_LRT", [], [], ""]
 ]];
 _sfLoadoutData setVariable ["sidearms", [
-["CUP_hgun_Glock17", "muzzle_snds_L", "CUP_acc_MLPLS_Laser", "optic_MRD_black", [], [], ""],
-["CUP_hgun_Glock17_blk", "muzzle_snds_L", "CUP_acc_MLPLS_Laser", "optic_MRD_black", [], [], ""]
+[, [], [], ""],
+[, [], [], ""]
 ]];
 /////////////////////////////////
 //    Military Loadout Data    //
@@ -454,24 +454,24 @@ _militiaLoadoutData setVariable ["uniforms", [
 	"CUP_U_B_BAF_DDPM_UBACSTSHIRT", 
 	"CUP_U_B_BAF_DDPM_UBACSTSHIRTKNEE"
 ]];		
-_militiaLoadoutData setVariable ["vests", ["CUP_V_B_BAF_DDPM_Osprey_Mk3_Pilot", "V_Chestrig_khk"]];			
-_militiaLoadoutData setVariable ["backpacks", ["B_AssaultPack_sgg", "B_TacticalPack_blk"]];		
-_militiaLoadoutData setVariable ["helmets", ["CUP_H_BAF_DDPM_Mk6_EMPTY", "H_Bandanna_sand", "H_Booniehat_tan"]];		
+_militiaLoadoutData setVariable ["vests", [""]];			
+_militiaLoadoutData setVariable ["backpacks", [""]];		
+_militiaLoadoutData setVariable ["helmets", [""]];		
 _militiaLoadoutData setVariable ["lightATLaunchers", [
-	["CUP_launch_MAAWS", "", "", "", ["MRAWS_HE_F", "MRAWS_HEAT55_F"], [], ""]
+	["CUP_launch_MAAWS", "", "", "", [""], [], ""]
 ]];
-_militiaLoadoutData setVariable ["ATLaunchers", ["CUP_launch_M136"]];  
+_militiaLoadoutData setVariable ["ATLaunchers", [""]];  
 
 _militiaLoadoutData setVariable ["rifles", [
-["CUP_arifle_L85A2", "", "", "", ["CUP_30Rnd_556x45_Stanag_L85", "CUP_30Rnd_556x45_Stanag_L85", "CUP_30Rnd_556x45_Stanag_Tracer_Red"], [], ""],
+["CUP_arifle_L85A2", "", "", "", ["", "", ""], [], ""],
 ["CUP_arifle_M16A2", "", "", "", ["CUP_20Rnd_556x45_Stanag", "CUP_20Rnd_556x45_Stanag", "CUP_20Rnd_556x45_Stanag_Tracer_Red"], [], ""]
 ]];
 _militiaLoadoutData setVariable ["carbines", [
-["CUP_arifle_Colt727", "", "CUP_acc_Flashlight", "", ["CUP_20Rnd_556x45_Stanag", "CUP_20Rnd_556x45_Stanag", "CUP_20Rnd_556x45_Stanag_Tracer_Red"], [], ""]
+["", "", "CUP_acc_Flashlight", "", ["CUP_20Rnd_556x45_Stanag", "CUP_20Rnd_556x45_Stanag", "CUP_20Rnd_556x45_Stanag_Tracer_Red"], [], ""]
 ]];
 _militiaLoadoutData setVariable ["grenadeLaunchers", [
 ["CUP_arifle_M16A2_GL", "", "", "", ["CUP_20Rnd_556x45_Stanag", "CUP_20Rnd_556x45_Stanag", "CUP_20Rnd_556x45_Stanag_Tracer_Red"], ["CUP_1Rnd_HE_M203", "CUP_1Rnd_HE_M203", "CUP_1Rnd_Smoke_M203", "CUP_1Rnd_StarCluster_White_M203"], ""],
-["CUP_arifle_Colt727_M203", "", "", "", ["CUP_20Rnd_556x45_Stanag", "CUP_20Rnd_556x45_Stanag", "CUP_20Rnd_556x45_Stanag_Tracer_Red"], ["CUP_1Rnd_HE_M203", "CUP_1Rnd_HE_M203", "CUP_1Rnd_Smoke_M203", "CUP_1Rnd_StarCluster_White_M203"], ""]
+["_M203", "", "", "", ["CUP_20Rnd_556x45_Stanag", "CUP_20Rnd_556x45_Stanag", "CUP_20Rnd_556x45_Stanag_Tracer_Red"], ["CUP_1Rnd_HE_M203", "CUP_1Rnd_HE_M203", "CUP_1Rnd_Smoke_M203", "CUP_1Rnd_StarCluster_White_M203"], ""]
 ]];
 _militiaLoadoutData setVariable ["SMGs", [
 ["CUP_smg_MP5A5", "", "", "", ["CUP_30Rnd_9x19_MP5", "30Rnd_9x21_Mag_SMG_02_Tracer_Red"], [], ""]
