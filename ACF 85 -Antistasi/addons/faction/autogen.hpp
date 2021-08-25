@@ -865,7 +865,7 @@ class CfgVehicles {
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
-        uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin_olive";
+        uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin";
 
         linkedItems[] = {"cwr3_b_uk_vest_58webbing_sapper","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
         respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing_sapper","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
