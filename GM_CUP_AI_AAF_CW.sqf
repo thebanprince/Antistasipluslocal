@@ -111,9 +111,9 @@
 ["vehiclesPlanesAA", ["CUP_B_F35B_BAF"]] call _fnc_saveToTemplate; 			
 ["vehiclesPlanesTransport", ["CUP_B_C130J_GB"]] call _fnc_saveToTemplate; 	
 
-["vehiclesHelisLight", ["CUP_B_AW159_Unarmed_RN_Grey", "CUP_B_AW159_Unarmed_GB", "CUP_B_AW159_Unarmed_RN_Blackcat"]] call _fnc_saveToTemplate; 		
-["vehiclesHelisTransport", ["CUP_B_AW159_Unarmed_RN_Grey", "CUP_B_AW159_Unarmed_GB", "CUP_B_AW159_Unarmed_RN_Blackcat","CUP_B_SA330_Puma_HC2_BAF", "CUP_B_Merlin_HC3_Armed_GB", "CUP_B_Merlin_HC3A_Armed_GB", "CUP_B_MH47E_GB"]] call _fnc_saveToTemplate; 	
-["vehiclesHelisAttack", ["CUP_B_AW159_RN_Blackcat", "CUP_B_AW159_GB", "CUP_B_AW159_RN_Grey", "CUP_B_AH1_DL_BAF"]] call _fnc_saveToTemplate; 		
+["vehiclesHelisLight", ["ACM_AAFGM_PAH1", "ACM_AAFGM_Heli_Light_01"]] call _fnc_saveToTemplate; 		 
+["vehiclesHelisTransport", ["ACM_AAFGM_ch53g", "ACM_AAFGM_PAH1", "CUP_B_Merlin_HC3A_Armed_GB"]] call _fnc_saveToTemplate; 	 
+["vehiclesHelisAttack", ["ACM_AAFGM_Heli_light_01_dynamicLoadout_F", "CUP_B_AH1_DL_BAF"]] call _fnc_saveToTemplate; 		
 
 ["vehiclesArtillery", [
 ["CUP_B_M270_DPICM_BAF_DES",["CUP_12Rnd_MLRS_HE"]],
