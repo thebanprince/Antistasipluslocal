@@ -549,12 +549,12 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
-        uniformClass = "cwr3_b_uk_uniform_dpm_weathered";
+        uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin";
 
-        linkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"cwr3_arifle_l1a1"};
         respawnWeapons[] = {"cwr3_arifle_l1a1"};
@@ -564,7 +564,7 @@ class CfgVehicles {
 
         backpack = "cwr3_b_uk_backpack_ammo";
 
-        ALiVE_orbatCreator_loadout[] = {{"cwr3_arifle_l1a1","","","",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{},{},{"cwr3_b_uk_uniform_dpm_weathered",{{"FirstAidKit",1},{"CUP_20Rnd_762x51_FNFAL_M",1,20}}},{"cwr3_b_uk_vest_58webbing",{{"CUP_20Rnd_762x51_FNFAL_M",6,20},{"CUP_HandGrenade_L109A1_HE",4,1}}},{"cwr3_b_uk_backpack_ammo",{{"FirstAidKit",1},{"CUP_20Rnd_762x51_FNFAL_M",4,20},{"cwr3_30rnd_sterling_m",4,30},{"CUP_HandGrenade_L109A1_HE",2,1}}},"cwr3_b_uk_headgear_mk5_helmet_scrim_camo","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"cwr3_arifle_l1a1","","","",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin",{{"FirstAidKit",1},{"CUP_20Rnd_762x51_FNFAL_M",1,20}}},{"cwr3_b_uk_vest_58webbing",{{"CUP_20Rnd_762x51_FNFAL_M",6,20},{"CUP_HandGrenade_L109A1_HE",4,1}}},{"cwr3_b_uk_backpack_ammo",{{"FirstAidKit",1},{"CUP_20Rnd_762x51_FNFAL_M",4,20},{"cwr3_30rnd_sterling_m",4,30},{"CUP_HandGrenade_L109A1_HE",2,1}}},"cwr3_b_uk_headgear_mk5_helmet","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -589,12 +589,12 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
-        uniformClass = "cwr3_b_uk_uniform_dpm_weathered";
+        uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin";
 
-        linkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"cwr3_arifle_l1a1"};
         respawnWeapons[] = {"cwr3_arifle_l1a1"};
@@ -604,7 +604,7 @@ class CfgVehicles {
 
         backpack = "cwr3_b_backpack_radio";
 
-        ALiVE_orbatCreator_loadout[] = {{"cwr3_arifle_l1a1","","","",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{},{},{"cwr3_b_uk_uniform_dpm_weathered",{{"FirstAidKit",1},{"CUP_20Rnd_762x51_FNFAL_M",1,20}}},{"cwr3_b_uk_vest_58webbing",{{"CUP_20Rnd_762x51_FNFAL_M",6,20},{"CUP_HandGrenade_L109A1_HE",4,1}}},{"cwr3_b_backpack_radio",{}},"cwr3_b_uk_headgear_mk5_helmet_scrim_camo","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"cwr3_arifle_l1a1","","","",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin",{{"FirstAidKit",1},{"CUP_20Rnd_762x51_FNFAL_M",1,20}}},{"cwr3_b_uk_vest_58webbing",{{"CUP_20Rnd_762x51_FNFAL_M",6,20},{"CUP_HandGrenade_L109A1_HE",4,1}}},{"cwr3_b_backpack_radio",{}},"cwr3_b_uk_headgear_mk5_helmet","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -629,12 +629,12 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
-        uniformClass = "cwr3_b_uk_uniform_dpm_weathered_olive";
+        uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin_olive";
 
-        linkedItems[] = {"cwr3_b_uk_vest_58webbing_mg","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing_mg","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"cwr3_b_uk_vest_58webbing_mg","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing_mg","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"cwr3_lmg_bren"};
         respawnWeapons[] = {"cwr3_lmg_bren"};
@@ -644,7 +644,7 @@ class CfgVehicles {
 
         backpack = "cwr3_b_uk_backpack_l4a3";
 
-        ALiVE_orbatCreator_loadout[] = {{"cwr3_lmg_bren","","","",{"cwr3_30rnd_762x51_bren_m",30},{},""},{},{},{"cwr3_b_uk_uniform_dpm_weathered_olive",{{"FirstAidKit",1},{"CUP_HandGrenade_L109A1_HE",1,1}}},{"cwr3_b_uk_vest_58webbing_mg",{{"cwr3_30rnd_762x51_bren_m",1,30},{"CUP_HandGrenade_L109A1_HE",1,1}}},{"cwr3_b_uk_backpack_l4a3",{{"FirstAidKit",1},{"cwr3_30rnd_762x51_bren_m",6,30},{"CUP_HandGrenade_L109A1_HE",2,1}}},"cwr3_b_uk_headgear_mk5_helmet_scrim_camo","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"cwr3_lmg_bren","","","",{"cwr3_30rnd_762x51_bren_m",30},{},""},{},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin_olive",{{"FirstAidKit",1},{"CUP_HandGrenade_L109A1_HE",1,1}}},{"cwr3_b_uk_vest_58webbing_mg",{{"cwr3_30rnd_762x51_bren_m",1,30},{"CUP_HandGrenade_L109A1_HE",1,1}}},{"cwr3_b_uk_backpack_l4a3",{{"FirstAidKit",1},{"cwr3_30rnd_762x51_bren_m",6,30},{"CUP_HandGrenade_L109A1_HE",2,1}}},"cwr3_b_uk_headgear_mk5_helmet","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -669,12 +669,12 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
-        uniformClass = "cwr3_b_uk_uniform_dpm_weathered";
+        uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin";
 
-        linkedItems[] = {"cwr3_b_uk_vest_58webbing_mg","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing_mg","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"cwr3_b_uk_vest_58webbing_mg","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing_mg","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"CUP_lmg_L7A2_Flat"};
         respawnWeapons[] = {"CUP_lmg_L7A2_Flat"};
@@ -684,7 +684,7 @@ class CfgVehicles {
 
         backpack = "cwr3_b_uk_backpack_l7a2";
 
-        ALiVE_orbatCreator_loadout[] = {{"CUP_lmg_L7A2_Flat","","","",{"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",100},{},""},{},{},{"cwr3_b_uk_uniform_dpm_weathered",{{"FirstAidKit",1},{"CUP_HandGrenade_L109A1_HE",2,1}}},{"cwr3_b_uk_vest_58webbing_mg",{{"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",2,100}}},{"cwr3_b_uk_backpack_l7a2",{{"FirstAidKit",1},{"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",3,100},{"CUP_HandGrenade_L109A1_HE",2,1}}},"cwr3_b_uk_headgear_mk5_helmet_scrim_camo","cwr3_b_facewear_scrimnet_scarf_olive",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"CUP_lmg_L7A2_Flat","","","",{"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",100},{},""},{},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin",{{"FirstAidKit",1},{"CUP_HandGrenade_L109A1_HE",2,1}}},{"cwr3_b_uk_vest_58webbing_mg",{{"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",2,100}}},{"cwr3_b_uk_backpack_l7a2",{{"FirstAidKit",1},{"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",3,100},{"CUP_HandGrenade_L109A1_HE",2,1}}},"cwr3_b_uk_headgear_mk5_helmet","cwr3_b_facewear_scrimnet_scarf_olive",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -709,12 +709,12 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
-        uniformClass = "cwr3_b_uk_uniform_dpm_weathered";
+        uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin";
 
-        linkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"cwr3_smg_sterling","cwr3_launch_carlgustaf"};
         respawnWeapons[] = {"cwr3_smg_sterling","cwr3_launch_carlgustaf"};
@@ -722,7 +722,7 @@ class CfgVehicles {
         magazines[] = {"cwr3_30rnd_sterling_m","cwr3_carlgustaf_heat_m","cwr3_30rnd_sterling_m"};
         respawnMagazines[] = {"cwr3_30rnd_sterling_m","cwr3_carlgustaf_heat_m","cwr3_30rnd_sterling_m"};
 
-        ALiVE_orbatCreator_loadout[] = {{"cwr3_smg_sterling","","","",{"cwr3_30rnd_sterling_m",30},{},""},{"cwr3_launch_carlgustaf","","","",{"cwr3_carlgustaf_heat_m",1},{},""},{},{"cwr3_b_uk_uniform_dpm_weathered",{{"FirstAidKit",1},{"cwr3_30rnd_sterling_m",2,30}}},{"cwr3_b_uk_vest_58webbing",{{"cwr3_30rnd_sterling_m",5,30}}},{},"cwr3_b_uk_headgear_mk5_helmet_scrim_camo","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"cwr3_smg_sterling","","","",{"cwr3_30rnd_sterling_m",30},{},""},{"cwr3_launch_carlgustaf","","","",{"cwr3_carlgustaf_heat_m",1},{},""},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin",{{"FirstAidKit",1},{"cwr3_30rnd_sterling_m",2,30}}},{"cwr3_b_uk_vest_58webbing",{{"cwr3_30rnd_sterling_m",5,30}}},{},"cwr3_b_uk_headgear_mk5_helmet","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -747,12 +747,12 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
-        uniformClass = "cwr3_b_uk_uniform_dpm_weathered_olive";
+        uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin_olive";
 
-        linkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"cwr3_arifle_l1a1","cwr3_launch_m72a3"};
         respawnWeapons[] = {"cwr3_arifle_l1a1","cwr3_launch_m72a3"};
@@ -760,7 +760,7 @@ class CfgVehicles {
         magazines[] = {"CUP_20Rnd_762x51_FNFAL_M","CUP_20Rnd_762x51_FNFAL_M"};
         respawnMagazines[] = {"CUP_20Rnd_762x51_FNFAL_M","CUP_20Rnd_762x51_FNFAL_M"};
 
-        ALiVE_orbatCreator_loadout[] = {{"cwr3_arifle_l1a1","","","",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{"cwr3_launch_m72a3","","","",{},{},""},{},{"cwr3_b_uk_uniform_dpm_weathered_olive",{{"FirstAidKit",1},{"CUP_20Rnd_762x51_FNFAL_M",1,20}}},{"cwr3_b_uk_vest_58webbing",{{"CUP_20Rnd_762x51_FNFAL_M",6,20}}},{},"cwr3_b_uk_headgear_mk5_helmet_scrim_camo","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"cwr3_arifle_l1a1","","","",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{"cwr3_launch_m72a3","","","",{},{},""},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin_olive",{{"FirstAidKit",1},{"CUP_20Rnd_762x51_FNFAL_M",1,20}}},{"cwr3_b_uk_vest_58webbing",{{"CUP_20Rnd_762x51_FNFAL_M",6,20}}},{},"cwr3_b_uk_headgear_mk5_helmet","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -785,12 +785,12 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
-        uniformClass = "cwr3_b_uk_uniform_dpm_weathered";
+        uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin";
 
-        linkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"cwr3_smg_sterling","cwr3_launch_javelin"};
         respawnWeapons[] = {"cwr3_smg_sterling","cwr3_launch_javelin"};
@@ -798,7 +798,7 @@ class CfgVehicles {
         magazines[] = {"cwr3_30rnd_sterling_m","cwr3_javelin_m","cwr3_30rnd_sterling_m"};
         respawnMagazines[] = {"cwr3_30rnd_sterling_m","cwr3_javelin_m","cwr3_30rnd_sterling_m"};
 
-        ALiVE_orbatCreator_loadout[] = {{"cwr3_smg_sterling","","","",{"cwr3_30rnd_sterling_m",30},{},""},{"cwr3_launch_javelin","","","",{"cwr3_javelin_m",1},{},""},{},{"cwr3_b_uk_uniform_dpm_weathered",{{"FirstAidKit",1},{"cwr3_30rnd_sterling_m",2,30}}},{"cwr3_b_uk_vest_58webbing",{{"cwr3_30rnd_sterling_m",5,30}}},{},"cwr3_b_uk_headgear_mk5_helmet_scrim_camo","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"cwr3_smg_sterling","","","",{"cwr3_30rnd_sterling_m",30},{},""},{"cwr3_launch_javelin","","","",{"cwr3_javelin_m",1},{},""},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin",{{"FirstAidKit",1},{"cwr3_30rnd_sterling_m",2,30}}},{"cwr3_b_uk_vest_58webbing",{{"cwr3_30rnd_sterling_m",5,30}}},{},"cwr3_b_uk_headgear_mk5_helmet","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -823,12 +823,12 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
-        uniformClass = "cwr3_b_uk_uniform_dpm_weathered";
+        uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin";
 
-        linkedItems[] = {"cwr3_b_uk_vest_58webbing_medic","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing_medic","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"cwr3_b_uk_vest_58webbing_medic","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing_medic","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"cwr3_smg_sterling"};
         respawnWeapons[] = {"cwr3_smg_sterling"};
@@ -838,7 +838,7 @@ class CfgVehicles {
 
         backpack = "cwr3_b_uk_backpack_medic";
 
-        ALiVE_orbatCreator_loadout[] = {{"cwr3_smg_sterling","","","",{"cwr3_30rnd_sterling_m",30},{},""},{},{},{"cwr3_b_uk_uniform_dpm_weathered",{{"FirstAidKit",1},{"cwr3_30rnd_sterling_m",2,30}}},{"cwr3_b_uk_vest_58webbing_medic",{{"cwr3_30rnd_sterling_m",5,30},{"SmokeShellBlue",1,1},{"SmokeShellYellow",1,1}}},{"cwr3_b_uk_backpack_medic",{{"Medikit",1},{"FirstAidKit",10}}},"cwr3_b_uk_headgear_mk5_helmet_scrim_camo","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"cwr3_smg_sterling","","","",{"cwr3_30rnd_sterling_m",30},{},""},{},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin",{{"FirstAidKit",1},{"cwr3_30rnd_sterling_m",2,30}}},{"cwr3_b_uk_vest_58webbing_medic",{{"cwr3_30rnd_sterling_m",5,30},{"SmokeShellBlue",1,1},{"SmokeShellYellow",1,1}}},{"cwr3_b_uk_backpack_medic",{{"Medikit",1},{"FirstAidKit",10}}},"cwr3_b_uk_headgear_mk5_helmet","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -863,12 +863,12 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
-        uniformClass = "cwr3_b_uk_uniform_dpm_weathered_olive";
+        uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin_olive";
 
-        linkedItems[] = {"cwr3_b_uk_vest_58webbing_sapper","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing_sapper","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"cwr3_b_uk_vest_58webbing_sapper","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing_sapper","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"cwr3_arifle_l1a1"};
         respawnWeapons[] = {"cwr3_arifle_l1a1"};
@@ -878,7 +878,7 @@ class CfgVehicles {
 
         backpack = "cwr3_b_uk_backpack_engineer";
 
-        ALiVE_orbatCreator_loadout[] = {{"cwr3_arifle_l1a1","","","",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{},{},{"cwr3_b_uk_uniform_dpm_weathered_olive",{{"FirstAidKit",1},{"CUP_20Rnd_762x51_FNFAL_M",1,20}}},{"cwr3_b_uk_vest_58webbing_sapper",{{"CUP_20Rnd_762x51_FNFAL_M",6,20},{"CUP_HandGrenade_L109A1_HE",2,1}}},{"cwr3_b_uk_backpack_engineer",{{"FirstAidKit",1},{"CUP_Mine_M",3,1}}},"cwr3_b_uk_headgear_mk5_helmet_scrim_camo","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"cwr3_arifle_l1a1","","","",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin_olive",{{"FirstAidKit",1},{"CUP_20Rnd_762x51_FNFAL_M",1,20}}},{"cwr3_b_uk_vest_58webbing_sapper",{{"CUP_20Rnd_762x51_FNFAL_M",6,20},{"CUP_HandGrenade_L109A1_HE",2,1}}},{"cwr3_b_uk_backpack_engineer",{{"FirstAidKit",1},{"CUP_Mine_M",3,1}}},"cwr3_b_uk_headgear_mk5_helmet","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -903,12 +903,12 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
-        uniformClass = "cwr3_b_uk_uniform_dpm_weathered";
+        uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin";
 
-        linkedItems[] = {"cwr3_b_uk_vest_58webbing_sapper","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing_sapper","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"cwr3_b_uk_vest_58webbing_sapper","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing_sapper","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"cwr3_arifle_l1a1"};
         respawnWeapons[] = {"cwr3_arifle_l1a1"};
@@ -918,7 +918,7 @@ class CfgVehicles {
 
         backpack = "cwr3_b_uk_backpack_sapper";
 
-        ALiVE_orbatCreator_loadout[] = {{"cwr3_arifle_l1a1","","","",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{},{},{"cwr3_b_uk_uniform_dpm_weathered",{{"FirstAidKit",1},{"CUP_20Rnd_762x51_FNFAL_M",1,20}}},{"cwr3_b_uk_vest_58webbing_sapper",{{"CUP_20Rnd_762x51_FNFAL_M",6,20},{"CUP_HandGrenade_L109A1_HE",2,1}}},{"cwr3_b_uk_backpack_sapper",{{"FirstAidKit",1},{"ToolKit",1},{"CUP_PipeBomb_M",3,1}}},"cwr3_b_uk_headgear_mk5_helmet_scrim_camo","cwr3_b_facewear_scrimnet_scarf_olive",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"cwr3_arifle_l1a1","","","",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin",{{"FirstAidKit",1},{"CUP_20Rnd_762x51_FNFAL_M",1,20}}},{"cwr3_b_uk_vest_58webbing_sapper",{{"CUP_20Rnd_762x51_FNFAL_M",6,20},{"CUP_HandGrenade_L109A1_HE",2,1}}},{"cwr3_b_uk_backpack_sapper",{{"FirstAidKit",1},{"ToolKit",1},{"CUP_PipeBomb_M",3,1}}},"cwr3_b_uk_headgear_mk5_helmet","cwr3_b_facewear_scrimnet_scarf_olive",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -943,7 +943,7 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
         uniformClass = "cwr3_i_uniform_coverall_grey";
 
@@ -981,7 +981,7 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
         uniformClass = "cwr3_b_uk_uniform_olive";
 
@@ -1019,7 +1019,7 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
         uniformClass = "cwr3_b_uk_uniform_pilot";
 
@@ -1057,7 +1057,7 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
         uniformClass = "cwr3_b_uk_uniform_pilot";
 
@@ -1095,9 +1095,9 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
-        uniformClass = "cwr3_b_uk_uniform_dpm_weathered";
+        uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin";
 
         linkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet_scrim_burlap_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
         respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet_scrim_burlap_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
@@ -1108,7 +1108,7 @@ class CfgVehicles {
         magazines[] = {"CUP_20Rnd_762x51_FNFAL_M","CUP_20Rnd_762x51_FNFAL_M"};
         respawnMagazines[] = {"CUP_20Rnd_762x51_FNFAL_M","CUP_20Rnd_762x51_FNFAL_M"};
 
-        ALiVE_orbatCreator_loadout[] = {{"cwr3_arifle_l1a1_suit","","","cwr3_optic_suit",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{},{},{"cwr3_b_uk_uniform_dpm_weathered",{{"FirstAidKit",1},{"CUP_20Rnd_762x51_FNFAL_M",1,20}}},{"cwr3_b_uk_vest_58webbing",{{"CUP_20Rnd_762x51_FNFAL_M",6,20},{"CUP_HandGrenade_L109A1_HE",4,1}}},{},"cwr3_b_uk_headgear_mk5_helmet_scrim_burlap_camo","cwr3_b_facewear_scrimnet_scarf_olive",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"cwr3_arifle_l1a1_suit","","","cwr3_optic_suit",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin",{{"FirstAidKit",1},{"CUP_20Rnd_762x51_FNFAL_M",1,20}}},{"cwr3_b_uk_vest_58webbing",{{"CUP_20Rnd_762x51_FNFAL_M",6,20},{"CUP_HandGrenade_L109A1_HE",4,1}}},{},"cwr3_b_uk_headgear_mk5_helmet_scrim_burlap_camo","cwr3_b_facewear_scrimnet_scarf_olive",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1133,7 +1133,7 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
         uniformClass = "cwr3_b_vest_ghillie";
 
@@ -1171,7 +1171,7 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
         uniformClass = "cwr3_b_vest_ghillie";
 
@@ -1209,12 +1209,12 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
-        uniformClass = "cwr3_b_uk_uniform_dpm_weathered";
+        uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin";
 
-        linkedItems[] = {"cwr3_b_uk_vest_58webbing_officer","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing_officer","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"cwr3_b_uk_vest_58webbing_officer","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing_officer","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"cwr3_arifle_l1a1_suit"};
         respawnWeapons[] = {"cwr3_arifle_l1a1_suit"};
@@ -1222,7 +1222,7 @@ class CfgVehicles {
         magazines[] = {"CUP_20Rnd_762x51_FNFAL_M","CUP_20Rnd_762x51_FNFAL_M"};
         respawnMagazines[] = {"CUP_20Rnd_762x51_FNFAL_M","CUP_20Rnd_762x51_FNFAL_M"};
 
-        ALiVE_orbatCreator_loadout[] = {{"cwr3_arifle_l1a1_suit","","","cwr3_optic_suit",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{},{},{"cwr3_b_uk_uniform_dpm_weathered",{{"FirstAidKit",1},{"CUP_20Rnd_762x51_FNFAL_M",1,20},{"SmokeShell",2,1}}},{"cwr3_b_uk_vest_58webbing_officer",{{"CUP_20Rnd_762x51_FNFAL_M",6,20},{"CUP_HandGrenade_L109A1_HE",2,1}}},{},"cwr3_b_uk_headgear_mk5_helmet_scrim_camo","cwr3_b_facewear_scrimnet_scarf_olive",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"cwr3_arifle_l1a1_suit","","","cwr3_optic_suit",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin",{{"FirstAidKit",1},{"CUP_20Rnd_762x51_FNFAL_M",1,20},{"SmokeShell",2,1}}},{"cwr3_b_uk_vest_58webbing_officer",{{"CUP_20Rnd_762x51_FNFAL_M",6,20},{"CUP_HandGrenade_L109A1_HE",2,1}}},{},"cwr3_b_uk_headgear_mk5_helmet","cwr3_b_facewear_scrimnet_scarf_olive",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1247,9 +1247,9 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
-        uniformClass = "cwr3_b_uk_uniform_dpm_weathered_olive";
+        uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin_olive";
 
         linkedItems[] = {"cwr3_b_uk_vest_58webbing_officer","cwr3_b_uk_headgear_beret_infantry","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
         respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing_officer","cwr3_b_uk_headgear_beret_infantry","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
@@ -1260,7 +1260,7 @@ class CfgVehicles {
         magazines[] = {"CUP_20Rnd_762x51_FNFAL_M","CUP_13Rnd_9x19_Browning_HP","CUP_20Rnd_762x51_FNFAL_M","CUP_13Rnd_9x19_Browning_HP"};
         respawnMagazines[] = {"CUP_20Rnd_762x51_FNFAL_M","CUP_13Rnd_9x19_Browning_HP","CUP_20Rnd_762x51_FNFAL_M","CUP_13Rnd_9x19_Browning_HP"};
 
-        ALiVE_orbatCreator_loadout[] = {{"cwr3_arifle_l1a1","","","",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{},{"CUP_hgun_Browning_HP","","","",{"CUP_13Rnd_9x19_Browning_HP",13},{},""},{"cwr3_b_uk_uniform_dpm_weathered_olive",{{"FirstAidKit",1},{"CUP_20Rnd_762x51_FNFAL_M",1,20}}},{"cwr3_b_uk_vest_58webbing_officer",{{"CUP_20Rnd_762x51_FNFAL_M",6,20},{"CUP_13Rnd_9x19_Browning_HP",3,13},{"CUP_HandGrenade_L109A1_HE",2,1},{"SmokeShell",1,1},{"SmokeShellRed",1,1},{"SmokeShellBlue",1,1}}},{},"cwr3_b_uk_headgear_beret_infantry","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"cwr3_arifle_l1a1","","","",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{},{"CUP_hgun_Browning_HP","","","",{"CUP_13Rnd_9x19_Browning_HP",13},{},""},{"ACM_AAFGM_Clothes_AFU_Snakeskin_olive",{{"FirstAidKit",1},{"CUP_20Rnd_762x51_FNFAL_M",1,20}}},{"cwr3_b_uk_vest_58webbing_officer",{{"CUP_20Rnd_762x51_FNFAL_M",6,20},{"CUP_13Rnd_9x19_Browning_HP",3,13},{"CUP_HandGrenade_L109A1_HE",2,1},{"SmokeShell",1,1},{"SmokeShellRed",1,1},{"SmokeShellBlue",1,1}}},{},"cwr3_b_uk_headgear_beret_infantry","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1285,9 +1285,9 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
-        uniformClass = "cwr3_b_uk_uniform_dpm_weathered";
+        uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin";
 
         linkedItems[] = {"cwr3_b_uk_vest_58webbing_belt","cwr3_b_uk_headgear_beret_infantry","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
         respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing_belt","cwr3_b_uk_headgear_beret_infantry","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
@@ -1298,7 +1298,7 @@ class CfgVehicles {
         magazines[] = {"cwr3_30rnd_sterling_m","CUP_13Rnd_9x19_Browning_HP","cwr3_30rnd_sterling_m","CUP_13Rnd_9x19_Browning_HP"};
         respawnMagazines[] = {"cwr3_30rnd_sterling_m","CUP_13Rnd_9x19_Browning_HP","cwr3_30rnd_sterling_m","CUP_13Rnd_9x19_Browning_HP"};
 
-        ALiVE_orbatCreator_loadout[] = {{"cwr3_smg_sterling","","","",{"cwr3_30rnd_sterling_m",30},{},""},{},{"CUP_hgun_Browning_HP","","","",{"CUP_13Rnd_9x19_Browning_HP",13},{},""},{"cwr3_b_uk_uniform_dpm_weathered",{{"FirstAidKit",1},{"cwr3_30rnd_sterling_m",2,30}}},{"cwr3_b_uk_vest_58webbing_belt",{{"cwr3_30rnd_sterling_m",5,30},{"CUP_13Rnd_9x19_Browning_HP",3,13},{"CUP_HandGrenade_L109A1_HE",2,1},{"SmokeShell",2,1}}},{},"cwr3_b_uk_headgear_beret_infantry","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"cwr3_smg_sterling","","","",{"cwr3_30rnd_sterling_m",30},{},""},{},{"CUP_hgun_Browning_HP","","","",{"CUP_13Rnd_9x19_Browning_HP",13},{},""},{"ACM_AAFGM_Clothes_AFU_Snakeskin",{{"FirstAidKit",1},{"cwr3_30rnd_sterling_m",2,30}}},{"cwr3_b_uk_vest_58webbing_belt",{{"cwr3_30rnd_sterling_m",5,30},{"CUP_13Rnd_9x19_Browning_HP",3,13},{"CUP_HandGrenade_L109A1_HE",2,1},{"SmokeShell",2,1}}},{},"cwr3_b_uk_headgear_beret_infantry","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1323,9 +1323,9 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
-        uniformClass = "cwr3_b_uk_uniform_dpm_weathered";
+        uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin";
 
         linkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_beret_infantry","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
         respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_beret_infantry","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
@@ -1336,7 +1336,7 @@ class CfgVehicles {
         magazines[] = {};
         respawnMagazines[] = {};
 
-        ALiVE_orbatCreator_loadout[] = {{},{},{},{"cwr3_b_uk_uniform_dpm_weathered",{{"FirstAidKit",1}}},{"cwr3_b_uk_vest_58webbing",{}},{},"cwr3_b_uk_headgear_beret_infantry","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{},{},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin",{{"FirstAidKit",1}}},{"cwr3_b_uk_vest_58webbing",{}},{},"cwr3_b_uk_headgear_beret_infantry","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1361,9 +1361,9 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
-        uniformClass = "cwr3_b_uk_uniform_dpm_weathered";
+        uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin";
 
         linkedItems[] = {};
         respawnlinkedItems[] = {};
@@ -1374,7 +1374,7 @@ class CfgVehicles {
         magazines[] = {};
         respawnMagazines[] = {};
 
-        ALiVE_orbatCreator_loadout[] = {{},{},{},{"cwr3_b_uk_uniform_dpm_weathered",{}},{},{},"","",{},{"","","","","",""}};
+        ALiVE_orbatCreator_loadout[] = {{},{},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin",{}},{},{},"","",{},{"","","","","",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1399,12 +1399,12 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
-        uniformClass = "cwr3_b_uk_uniform_dpm_weathered_olive";
+        uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin_olive";
 
-        linkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"cwr3_arifle_l1a1"};
         respawnWeapons[] = {"cwr3_arifle_l1a1"};
@@ -1414,7 +1414,7 @@ class CfgVehicles {
 
         backpack = "cwr3_b_uk_backpack_carlgustaf";
 
-        ALiVE_orbatCreator_loadout[] = {{"cwr3_arifle_l1a1","","","",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{},{},{"cwr3_b_uk_uniform_dpm_weathered_olive",{{"FirstAidKit",1},{"CUP_20Rnd_762x51_FNFAL_M",1,20}}},{"cwr3_b_uk_vest_58webbing",{{"CUP_20Rnd_762x51_FNFAL_M",6,20},{"CUP_HandGrenade_L109A1_HE",4,1}}},{"cwr3_b_uk_backpack_carlgustaf",{{"FirstAidKit",1},{"cwr3_carlgustaf_heat_m",2,1}}},"cwr3_b_uk_headgear_mk5_helmet_scrim_camo","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"cwr3_arifle_l1a1","","","",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin_olive",{{"FirstAidKit",1},{"CUP_20Rnd_762x51_FNFAL_M",1,20}}},{"cwr3_b_uk_vest_58webbing",{{"CUP_20Rnd_762x51_FNFAL_M",6,20},{"CUP_HandGrenade_L109A1_HE",4,1}}},{"cwr3_b_uk_backpack_carlgustaf",{{"FirstAidKit",1},{"cwr3_carlgustaf_heat_m",2,1}}},"cwr3_b_uk_headgear_mk5_helmet","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1439,12 +1439,12 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
-        uniformClass = "cwr3_b_uk_uniform_dpm_weathered_olive";
+        uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin_olive";
 
-        linkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"cwr3_arifle_l1a1"};
         respawnWeapons[] = {"cwr3_arifle_l1a1"};
@@ -1454,7 +1454,7 @@ class CfgVehicles {
 
         backpack = "cwr3_b_uk_backpack_javelin";
 
-        ALiVE_orbatCreator_loadout[] = {{"cwr3_arifle_l1a1","","","",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{},{},{"cwr3_b_uk_uniform_dpm_weathered_olive",{{"FirstAidKit",1},{"CUP_20Rnd_762x51_FNFAL_M",1,20}}},{"cwr3_b_uk_vest_58webbing",{{"CUP_20Rnd_762x51_FNFAL_M",6,20},{"CUP_HandGrenade_L109A1_HE",4,1}}},{"cwr3_b_uk_backpack_javelin",{{"FirstAidKit",1},{"cwr3_javelin_m",2,1}}},"cwr3_b_uk_headgear_mk5_helmet_scrim_camo","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"cwr3_arifle_l1a1","","","",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin_olive",{{"FirstAidKit",1},{"CUP_20Rnd_762x51_FNFAL_M",1,20}}},{"cwr3_b_uk_vest_58webbing",{{"CUP_20Rnd_762x51_FNFAL_M",6,20},{"CUP_HandGrenade_L109A1_HE",4,1}}},{"cwr3_b_uk_backpack_javelin",{{"FirstAidKit",1},{"cwr3_javelin_m",2,1}}},"cwr3_b_uk_headgear_mk5_helmet","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1479,12 +1479,12 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
-        uniformClass = "cwr3_b_uk_uniform_dpm_weathered";
+        uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin";
 
-        linkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"cwr3_arifle_l1a1"};
         respawnWeapons[] = {"cwr3_arifle_l1a1"};
@@ -1494,7 +1494,7 @@ class CfgVehicles {
 
         backpack = "cwr3_b_uk_backpack_l4a3";
 
-        ALiVE_orbatCreator_loadout[] = {{"cwr3_arifle_l1a1","","","",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{},{},{"cwr3_b_uk_uniform_dpm_weathered",{{"FirstAidKit",1},{"CUP_20Rnd_762x51_FNFAL_M",1,20}}},{"cwr3_b_uk_vest_58webbing",{{"CUP_20Rnd_762x51_FNFAL_M",6,20},{"CUP_HandGrenade_L109A1_HE",4,1}}},{"cwr3_b_uk_backpack_l4a3",{{"FirstAidKit",1},{"cwr3_30rnd_762x51_bren_m",6,30},{"CUP_HandGrenade_L109A1_HE",2,1}}},"cwr3_b_uk_headgear_mk5_helmet_scrim_camo","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"cwr3_arifle_l1a1","","","",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin",{{"FirstAidKit",1},{"CUP_20Rnd_762x51_FNFAL_M",1,20}}},{"cwr3_b_uk_vest_58webbing",{{"CUP_20Rnd_762x51_FNFAL_M",6,20},{"CUP_HandGrenade_L109A1_HE",4,1}}},{"cwr3_b_uk_backpack_l4a3",{{"FirstAidKit",1},{"cwr3_30rnd_762x51_bren_m",6,30},{"CUP_HandGrenade_L109A1_HE",2,1}}},"cwr3_b_uk_headgear_mk5_helmet","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1519,12 +1519,12 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
-        uniformClass = "cwr3_b_uk_uniform_dpm_weathered";
+        uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin";
 
-        linkedItems[] = {"cwr3_b_uk_vest_58webbing_mg","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing_mg","cwr3_b_uk_headgear_mk5_helmet_scrim_camo","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"cwr3_b_uk_vest_58webbing_mg","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing_mg","cwr3_b_uk_headgear_mk5_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"cwr3_arifle_l1a1"};
         respawnWeapons[] = {"cwr3_arifle_l1a1"};
@@ -1534,7 +1534,7 @@ class CfgVehicles {
 
         backpack = "cwr3_b_uk_backpack_l7a2";
 
-        ALiVE_orbatCreator_loadout[] = {{"cwr3_arifle_l1a1","","","",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{},{},{"cwr3_b_uk_uniform_dpm_weathered",{{"FirstAidKit",1},{"CUP_20Rnd_762x51_FNFAL_M",1,20}}},{"cwr3_b_uk_vest_58webbing_mg",{{"CUP_20Rnd_762x51_FNFAL_M",6,20},{"CUP_HandGrenade_L109A1_HE",4,1}}},{"cwr3_b_uk_backpack_l7a2",{{"FirstAidKit",1},{"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",3,100},{"CUP_HandGrenade_L109A1_HE",2,1}}},"cwr3_b_uk_headgear_mk5_helmet_scrim_camo","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"cwr3_arifle_l1a1","","","",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin",{{"FirstAidKit",1},{"CUP_20Rnd_762x51_FNFAL_M",1,20}}},{"cwr3_b_uk_vest_58webbing_mg",{{"CUP_20Rnd_762x51_FNFAL_M",6,20},{"CUP_HandGrenade_L109A1_HE",4,1}}},{"cwr3_b_uk_backpack_l7a2",{{"FirstAidKit",1},{"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",3,100},{"CUP_HandGrenade_L109A1_HE",2,1}}},"cwr3_b_uk_headgear_mk5_helmet","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1559,7 +1559,7 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
         uniformClass = "cwr3_b_uk_uniform_dpm_gloves";
 
@@ -1599,7 +1599,7 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
         uniformClass = "cwr3_b_uk_uniform_dpm_gloves";
 
@@ -1639,7 +1639,7 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
         uniformClass = "cwr3_b_uk_uniform_dpm_gloves";
 
@@ -1679,7 +1679,7 @@ class CfgVehicles {
         side = 1;
         faction = "B_AltisACF";
 
-        identityTypes[] = {"Head_NATO","LanguageENGB_F"};
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
         uniformClass = "cwr3_b_uk_uniform_dpm_gloves";
 
