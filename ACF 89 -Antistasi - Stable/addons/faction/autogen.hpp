@@ -1891,59 +1891,16 @@ class CfgVehicles {
 
         uniformClass = "ACM_AAFGM_Clothes_BDU";
 
-        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","gm_ge_army_conat2","gm_watch_kosei_80"};
-        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","gm_ge_army_conat2","gm_watch_kosei_80"};
+        linkedItems[] = {"gm_dk_army_vest_54_rifleman","CUP_H_USArmy_Helmet_M1_plain_Olive","ItemMap","ItemRadio","gm_ge_army_conat2","gm_watch_kosei_80"};
+        respawnlinkedItems[] = {"gm_dk_army_vest_54_rifleman","CUP_H_USArmy_Helmet_M1_plain_Olive","ItemMap","ItemRadio","gm_ge_army_conat2","gm_watch_kosei_80"};
 
-        weapons[] = {"rhs_weap_l1a1_wood","hgun_Pistol_heavy_01_green_F","gm_df7x40_blk"};
-        respawnWeapons[] = {"rhs_weap_l1a1_wood","hgun_Pistol_heavy_01_green_F","gm_df7x40_blk"};
+        weapons[] = {"CUP_arifle_FNFAL5061_wooden","CUP_hgun_Colt1911","gm_df7x40_blk"};
+        respawnWeapons[] = {"CUP_arifle_FNFAL5061_wooden","CUP_hgun_Colt1911","gm_df7x40_blk"};
 
-        magazines[] = {"rhs_mag_20Rnd_762x51_m80_fnfal","11Rnd_45ACP_Mag","rhs_mag_20Rnd_762x51_m80_fnfal","11Rnd_45ACP_Mag"};
-        respawnMagazines[] = {"rhs_mag_20Rnd_762x51_m80_fnfal","11Rnd_45ACP_Mag","rhs_mag_20Rnd_762x51_m80_fnfal","11Rnd_45ACP_Mag"};
+        magazines[] = {"CUP_20Rnd_762x51_FNFAL_M","CUP_7Rnd_45ACP_1911","CUP_20Rnd_762x51_FNFAL_M","CUP_7Rnd_45ACP_1911"};
+        respawnMagazines[] = {"CUP_20Rnd_762x51_FNFAL_M","CUP_7Rnd_45ACP_1911","CUP_20Rnd_762x51_FNFAL_M","CUP_7Rnd_45ACP_1911"};
 
-        backpack = "UK3CB_B_Alice_Bedroll_K";
-
-        ALiVE_orbatCreator_loadout[] = {{"rhs_weap_l1a1_wood","rhsgref_acc_falMuzzle_l1a1","","",{"rhs_mag_20Rnd_762x51_m80_fnfal",20},{},""},{},{"hgun_Pistol_heavy_01_green_F","","","optic_MRD_black",{"11Rnd_45ACP_Mag",11},{},""},{"ACM_AAFGM_Clothes_BDU",{{"gm_gc_army_medkit",1},{"11Rnd_45ACP_Mag",1,11},{"rhs_mag_20Rnd_762x51_m80_fnfal",1,20}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{{"gm_gc_army_medkit",3}}},{"UK3CB_B_Alice_Bedroll_K",{{"gm_gc_army_medkit",3},{"11Rnd_45ACP_Mag",4,11},{"rhs_mag_20Rnd_762x51_m80_fnfal",4,20},{"rhs_mag_20Rnd_762x51_m62_fnfal",3,20},{"gm_handgrenade_frag_dm51",5,1},{"gm_handgrenade_frag_dm51a1",4,1},{"gm_handgrenade_frag_rgd5",3,1},{"rhs_grenade_anm8_mag",4,1}}},"UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","",{"gm_df7x40_blk","","","",{},{},""},{"ItemMap","","ItemRadio","gm_ge_army_conat2","gm_watch_kosei_80",""}};
-
-
-        class EventHandlers : EventHandlers {
-            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-            class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'AAF_3rdRegiment'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-            };
-
-        };
-
-        // custom attributes (do not delete)
-        ALiVE_orbatCreator_owned = 1;
-        ALiVE_orbatCreator_insignia = "AAF_3rdRegiment";
-
-    };
-
-    class B_AltisACF_Repair_Specialist_Altis_01 : AAFGM_Soldier_Repair_OCimport_02 {
-        author = "Commander";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Repair Specialist";
-        side = 1;
-        faction = "b_altisacf";
-
-        identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
-
-        uniformClass = "ACM_AAFGM_Clothes_BDU_2";
-
-        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-
-        weapons[] = {"gm_m16a1_blk"};
-        respawnWeapons[] = {"gm_m16a1_blk"};
-
-        magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag"};
-        respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag"};
-
-        backpack = "AFGM_Fieldpack_Repair";
-
-        ALiVE_orbatCreator_loadout[] = {{"gm_m16a1_blk","","","",{"30Rnd_556x45_Stanag",30},{},""},{},{},{"ACM_AAFGM_Clothes_BDU_2",{{"gm_gc_army_medkit",1},{"30Rnd_556x45_Stanag",3,30}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{{"30Rnd_556x45_Stanag",4,30},{"gm_handgrenade_frag_dm51a1",1,1},{"gm_smokeshell_wht_dm25",1,1}}},{"AFGM_Fieldpack_Repair",{{"gm_repairkit_01",1},{"gm_explosive_petn_charge",1,1},{"gm_smokeshell_blu_gc",1,1},{"gm_smokeshell_grn_gc",1,1},{"gm_smokeshell_org_gc",1,1},{"gm_smokeshell_red_gc",1,1}}},"UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_FNFAL5061_wooden","","","",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{},{"CUP_hgun_Colt1911","","","",{"CUP_7Rnd_45ACP_1911",7},{},""},{"ACM_AAFGM_Clothes_BDU",{{"gm_gc_army_medkit",1},{"CUP_20Rnd_762x51_FNFAL_M",2,20},{"CUP_7Rnd_45ACP_1911",2,7}}},{"gm_dk_army_vest_54_rifleman",{}},{},"CUP_H_USArmy_Helmet_M1_plain_Olive","",{"gm_df7x40_blk","","","",{},{},""},{"ItemMap","","ItemRadio","gm_ge_army_conat2","gm_watch_kosei_80",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1959,6 +1916,10 @@ class CfgVehicles {
         ALiVE_orbatCreator_owned = 1;
 
     };
+
+};
+
+
 
     class B_AltisACF_Survivor_Altis_01 : AAFGM_survivor_OCimport_02 {
         author = "Commander";
@@ -2010,8 +1971,8 @@ class CfgVehicles {
 
         uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin_autumn";
 
-        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {};
         respawnWeapons[] = {};
@@ -2019,7 +1980,7 @@ class CfgVehicles {
         magazines[] = {};
         respawnMagazines[] = {};
 
-        ALiVE_orbatCreator_loadout[] = {{},{},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin_autumn",{{"gm_gc_army_medkit",1}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{}},{},"UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{},{},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin_autumn",{{"gm_gc_army_medkit",1}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{}},{}," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -2086,8 +2047,8 @@ class CfgVehicles {
 
         uniformClass = "ACM_AAFGM_Clothes_BDU_2";
 
-        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"AAFGM_c7a1_Optic","gm_p2a1_blk"};
         respawnWeapons[] = {"AAFGM_c7a1_Optic","gm_p2a1_blk"};
@@ -2095,7 +2056,7 @@ class CfgVehicles {
         magazines[] = {"30Rnd_556x45_Stanag","gm_1Rnd_265mm_flare_multi_red_gc","30Rnd_556x45_Stanag","gm_1Rnd_265mm_flare_multi_red_gc"};
         respawnMagazines[] = {"30Rnd_556x45_Stanag","gm_1Rnd_265mm_flare_multi_red_gc","30Rnd_556x45_Stanag","gm_1Rnd_265mm_flare_multi_red_gc"};
 
-        ALiVE_orbatCreator_loadout[] = {{"AAFGM_c7a1_Optic","","","gm_c79a1_oli",{"30Rnd_556x45_Stanag",30},{},""},{},{"gm_p2a1_blk","","","",{"gm_1Rnd_265mm_flare_multi_red_gc",1},{},""},{"ACM_AAFGM_Clothes_BDU_2",{{"gm_gc_army_medkit",1},{"30Rnd_556x45_Stanag",3,30}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{{"30Rnd_556x45_Stanag",4,30},{"gm_handgrenade_frag_dm51a1",1,1},{"gm_smokeshell_wht_dm25",3,1},{"gm_1Rnd_265mm_smoke_single_yel_gc",1,1},{"gm_1Rnd_265mm_flare_single_red_DM13",1,1},{"gm_1Rnd_265mm_flare_single_grn_DM11",1,1}}},{},"UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"AAFGM_c7a1_Optic","","","gm_c79a1_oli",{"30Rnd_556x45_Stanag",30},{},""},{},{"gm_p2a1_blk","","","",{"gm_1Rnd_265mm_flare_multi_red_gc",1},{},""},{"ACM_AAFGM_Clothes_BDU_2",{{"gm_gc_army_medkit",1},{"30Rnd_556x45_Stanag",3,30}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{{"30Rnd_556x45_Stanag",4,30},{"gm_handgrenade_frag_dm51a1",1,1},{"gm_smokeshell_wht_dm25",3,1},{"gm_1Rnd_265mm_smoke_single_yel_gc",1,1},{"gm_1Rnd_265mm_flare_single_red_DM13",1,1},{"gm_1Rnd_265mm_flare_single_grn_DM11",1,1}}},{}," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -2122,10 +2083,10 @@ class CfgVehicles {
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
 
-        uniformClass = "ACM_AAFGM_Clothes_AFU_Altpat_autumn";
+        uniformClass = "ACM_AAFGM_Clothes_BDU";
 
-        linkedItems[] = {"ACM_AAFGM_Vest_m84_MachGunner","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"ACM_AAFGM_Vest_m84_MachGunner","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_MachGunner"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_MachGunner"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"AAFGM_c7a1_Optic","gm_p2a1_blk"};
         respawnWeapons[] = {"AAFGM_c7a1_Optic","gm_p2a1_blk"};
@@ -2133,7 +2094,7 @@ class CfgVehicles {
         magazines[] = {"30Rnd_556x45_Stanag","gm_1Rnd_265mm_smoke_single_yel_gc","30Rnd_556x45_Stanag","gm_1Rnd_265mm_smoke_single_yel_gc"};
         respawnMagazines[] = {"30Rnd_556x45_Stanag","gm_1Rnd_265mm_smoke_single_yel_gc","30Rnd_556x45_Stanag","gm_1Rnd_265mm_smoke_single_yel_gc"};
 
-        ALiVE_orbatCreator_loadout[] = {{"AAFGM_c7a1_Optic","","","gm_c79a1_oli",{"30Rnd_556x45_Stanag",30},{},""},{},{"gm_p2a1_blk","","","",{"gm_1Rnd_265mm_smoke_single_yel_gc",1},{},""},{"ACM_AAFGM_Clothes_AFU_Altpat_autumn",{{"gm_gc_army_medkit",1},{"30Rnd_556x45_Stanag",3,30}}},{"ACM_AAFGM_Vest_m84_MachGunner",{{"30Rnd_556x45_Stanag",4,30},{"gm_handgrenade_frag_dm51a1",1,1},{"gm_smokeshell_wht_dm25",3,1},{"gm_1Rnd_265mm_flare_single_red_DM13",1,1},{"gm_1Rnd_265mm_flare_single_grn_DM11",1,1}}},{},"UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"AAFGM_c7a1_Optic","","","gm_c79a1_oli",{"30Rnd_556x45_Stanag",30},{},""},{},{"gm_p2a1_blk","","","",{"gm_1Rnd_265mm_smoke_single_yel_gc",1},{},""},{"ACM_AAFGM_Clothes_BDU",{{"gm_gc_army_medkit",1},{"30Rnd_556x45_Stanag",3,30}}},{"ACM_AAFGM_Vest_Lizard_MachGunner",{{"30Rnd_556x45_Stanag",4,30},{"gm_handgrenade_frag_dm51a1",1,1},{"gm_smokeshell_wht_dm25",3,1},{"gm_1Rnd_265mm_flare_single_red_DM13",1,1},{"gm_1Rnd_265mm_flare_single_grn_DM11",1,1}}},{}," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -2200,8 +2161,8 @@ class CfgVehicles {
 
         uniformClass = "ACM_AAFGM_Clothes_BDU_2";
 
-        linkedItems[] = {"ACM_AAFGM_Vest_m84_MachGunner","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"ACM_AAFGM_Vest_m84_MachGunner","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_MachGunner"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_MachGunner"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"LMG_03_F"};
         respawnWeapons[] = {"LMG_03_F"};
@@ -2209,7 +2170,7 @@ class CfgVehicles {
         magazines[] = {"200Rnd_556x45_Box_F","200Rnd_556x45_Box_F"};
         respawnMagazines[] = {"200Rnd_556x45_Box_F","200Rnd_556x45_Box_F"};
 
-        ALiVE_orbatCreator_loadout[] = {{"LMG_03_F","","","",{"200Rnd_556x45_Box_F",200},{},""},{},{},{"ACM_AAFGM_Clothes_BDU_2",{{"gm_gc_army_medkit",1},{"gm_handgrenade_frag_dm51a1",2,1}}},{"ACM_AAFGM_Vest_m84_MachGunner",{{"200Rnd_556x45_Box_F",2,200}}},{},"UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"LMG_03_F","","","",{"200Rnd_556x45_Box_F",200},{},""},{},{},{"ACM_AAFGM_Clothes_BDU_2",{{"gm_gc_army_medkit",1},{"gm_handgrenade_frag_dm51a1",2,1}}},{"ACM_AAFGM_Vest_Lizard_MachGunner",{{"200Rnd_556x45_Box_F",2,200}}},{}," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -2236,7 +2197,7 @@ class CfgVehicles {
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_NATO_casual"};
 
-        uniformClass = "ACM_AAFGM_Clothes_AFU_Altpat_autumn";
+        uniformClass = "ACM_AAFGM_Clothes_BDU";
 
         linkedItems[] = {"gm_ge_army_vest_80_leader","ACM_AAFGM_Headgear_Beret_MP","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
         respawnlinkedItems[] = {"gm_ge_army_vest_80_leader","ACM_AAFGM_Headgear_Beret_MP","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
@@ -2247,7 +2208,7 @@ class CfgVehicles {
         magazines[] = {"30Rnd_556x45_Stanag","gm_1Rnd_265mm_flare_multi_red_gc","30Rnd_556x45_Stanag","gm_1Rnd_265mm_flare_multi_red_gc"};
         respawnMagazines[] = {"30Rnd_556x45_Stanag","gm_1Rnd_265mm_flare_multi_red_gc","30Rnd_556x45_Stanag","gm_1Rnd_265mm_flare_multi_red_gc"};
 
-        ALiVE_orbatCreator_loadout[] = {{"gm_m16a2_blk","","","",{"30Rnd_556x45_Stanag",30},{},""},{},{"gm_p2a1_blk","","","",{"gm_1Rnd_265mm_flare_multi_red_gc",1},{},""},{"ACM_AAFGM_Clothes_AFU_Altpat_autumn",{{"gm_gc_army_medkit",1},{"30Rnd_556x45_Stanag",3,30}}},{"gm_ge_army_vest_80_leader",{{"30Rnd_556x45_Stanag",4,30},{"gm_handgrenade_frag_dm51a1",1,1},{"gm_smokeshell_wht_dm25",3,1},{"gm_1Rnd_265mm_smoke_single_yel_gc",1,1},{"gm_1Rnd_265mm_flare_single_red_DM13",1,1},{"gm_1Rnd_265mm_flare_single_grn_DM11",1,1}}},{},"ACM_AAFGM_Headgear_Beret_MP","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"gm_m16a2_blk","","","",{"30Rnd_556x45_Stanag",30},{},""},{},{"gm_p2a1_blk","","","",{"gm_1Rnd_265mm_flare_multi_red_gc",1},{},""},{"ACM_AAFGM_Clothes_BDU",{{"gm_gc_army_medkit",1},{"30Rnd_556x45_Stanag",3,30}}},{"gm_ge_army_vest_80_leader",{{"30Rnd_556x45_Stanag",4,30},{"gm_handgrenade_frag_dm51a1",1,1},{"gm_smokeshell_wht_dm25",3,1},{"gm_1Rnd_265mm_smoke_single_yel_gc",1,1},{"gm_1Rnd_265mm_flare_single_red_DM13",1,1},{"gm_1Rnd_265mm_flare_single_grn_DM11",1,1}}},{},"ACM_AAFGM_Headgear_Beret_MP","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -2314,8 +2275,8 @@ class CfgVehicles {
 
         uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin_autumn";
 
-        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"gm_m16a2_blk"};
         respawnWeapons[] = {"gm_m16a2_blk"};
@@ -2325,7 +2286,7 @@ class CfgVehicles {
 
         backpack = "AAFGM_Medic_Pack";
 
-        ALiVE_orbatCreator_loadout[] = {{"gm_m16a2_blk","","","",{"30Rnd_556x45_Stanag",30},{},""},{},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin_autumn",{{"gm_gc_army_medkit",1},{"30Rnd_556x45_Stanag",3,30}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{{"30Rnd_556x45_Stanag",4,30},{"gm_handgrenade_frag_dm51a1",1,1},{"gm_smokeshell_wht_dm25",1,1}}},{"AAFGM_Medic_Pack",{{"gm_ge_army_burnBandage",5},{"gm_ge_army_gauzeBandage",5},{"gm_ge_army_medkit_80",1}}},"UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"gm_m16a2_blk","","","",{"30Rnd_556x45_Stanag",30},{},""},{},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin_autumn",{{"gm_gc_army_medkit",1},{"30Rnd_556x45_Stanag",3,30}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{{"30Rnd_556x45_Stanag",4,30},{"gm_handgrenade_frag_dm51a1",1,1},{"gm_smokeshell_wht_dm25",1,1}}},{"AAFGM_Medic_Pack",{{"gm_ge_army_burnBandage",5},{"gm_ge_army_gauzeBandage",5},{"gm_ge_army_medkit_80",1}}}," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -2392,8 +2353,8 @@ class CfgVehicles {
 
         uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin_autumn";
 
-        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"gm_m16a1_blk","gm_pzf84_oli"};
         respawnWeapons[] = {"gm_m16a1_blk","gm_pzf84_oli"};
@@ -2403,7 +2364,7 @@ class CfgVehicles {
 
         backpack = "AAFGM_AT_Pack";
 
-        ALiVE_orbatCreator_loadout[] = {{"gm_m16a1_blk","","","",{"30Rnd_556x45_Stanag",30},{},""},{"gm_pzf84_oli","","","",{},{},""},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin_autumn",{{"gm_gc_army_medkit",1},{"30Rnd_556x45_Stanag",3,30}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{{"30Rnd_556x45_Stanag",4,30},{"gm_handgrenade_frag_dm51a1",1,1},{"gm_smokeshell_wht_dm25",1,1}}},{"AAFGM_AT_Pack",{{"gm_1Rnd_84x245mm_heat_t_DM22_carlgustaf",1,1},{"gm_1Rnd_84x245mm_heat_t_DM32_carlgustaf",1,1},{"gm_1Rnd_84x245mm_ILLUM_DM16_carlgustaf",1,1}}},"UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"gm_m16a1_blk","","","",{"30Rnd_556x45_Stanag",30},{},""},{"gm_pzf84_oli","","","",{},{},""},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin_autumn",{{"gm_gc_army_medkit",1},{"30Rnd_556x45_Stanag",3,30}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{{"30Rnd_556x45_Stanag",4,30},{"gm_handgrenade_frag_dm51a1",1,1},{"gm_smokeshell_wht_dm25",1,1}}},{"AAFGM_AT_Pack",{{"gm_1Rnd_84x245mm_heat_t_DM22_carlgustaf",1,1},{"gm_1Rnd_84x245mm_heat_t_DM32_carlgustaf",1,1},{"gm_1Rnd_84x245mm_ILLUM_DM16_carlgustaf",1,1}}}," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -2432,8 +2393,8 @@ class CfgVehicles {
 
         uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin_autumn";
 
-        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"gm_m16a1_blk","gm_pzf44_2_oli"};
         respawnWeapons[] = {"gm_m16a1_blk","gm_pzf44_2_oli"};
@@ -2443,7 +2404,7 @@ class CfgVehicles {
 
         backpack = "AAFGM_AT_Lite_Pack";
 
-        ALiVE_orbatCreator_loadout[] = {{"gm_m16a1_blk","","","",{"30Rnd_556x45_Stanag",30},{},""},{"gm_pzf44_2_oli","","","",{},{},""},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin_autumn",{{"gm_gc_army_medkit",1},{"30Rnd_556x45_Stanag",3,30}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{{"30Rnd_556x45_Stanag",4,30},{"gm_handgrenade_frag_dm51a1",1,1},{"gm_smokeshell_wht_dm25",1,1}}},{"AAFGM_AT_Lite_Pack",{{"gm_1Rnd_44x537mm_heat_dm32_pzf44_2",2,1}}},"UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"gm_m16a1_blk","","","",{"30Rnd_556x45_Stanag",30},{},""},{"gm_pzf44_2_oli","","","",{},{},""},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin_autumn",{{"gm_gc_army_medkit",1},{"30Rnd_556x45_Stanag",3,30}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{{"30Rnd_556x45_Stanag",4,30},{"gm_handgrenade_frag_dm51a1",1,1},{"gm_smokeshell_wht_dm25",1,1}}},{"AAFGM_AT_Lite_Pack",{{"gm_1Rnd_44x537mm_heat_dm32_pzf44_2",2,1}}}," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -2472,8 +2433,8 @@ class CfgVehicles {
 
         uniformClass = "ACM_AAFGM_Clothes_AFU_Snakeskin_autumn";
 
-        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"gm_m16a1_blk"};
         respawnWeapons[] = {"gm_m16a1_blk"};
@@ -2483,7 +2444,7 @@ class CfgVehicles {
 
         backpack = "gm_milan_launcher_weaponBag";
 
-        ALiVE_orbatCreator_loadout[] = {{"gm_m16a1_blk","","","",{"30Rnd_556x45_Stanag",30},{},""},{},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin_autumn",{{"gm_gc_army_medkit",1},{"30Rnd_556x45_Stanag",3,30}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{{"30Rnd_556x45_Stanag",4,30},{"gm_handgrenade_frag_dm51a1",1,1},{"gm_smokeshell_wht_dm25",1,1}}},{"gm_milan_launcher_weaponBag",{}},"UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"gm_m16a1_blk","","","",{"30Rnd_556x45_Stanag",30},{},""},{},{},{"ACM_AAFGM_Clothes_AFU_Snakeskin_autumn",{{"gm_gc_army_medkit",1},{"30Rnd_556x45_Stanag",3,30}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{{"30Rnd_556x45_Stanag",4,30},{"gm_handgrenade_frag_dm51a1",1,1},{"gm_smokeshell_wht_dm25",1,1}}},{"gm_milan_launcher_weaponBag",{}}," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -2538,20 +2499,20 @@ class CfgVehicles {
 
     };
 
-    class B_AltisACF_Military_Police_Light_Altis_01 : AAFGM_soldier_MP_lite_OCimport_02 {
+        class B_BALtisACF_Policeman_01 : APD_Police_OCimport_02 {
         author = "Commander";
         scope = 2;
         scopeCurator = 2;
-        displayName = "Military Police (Light)";
+        displayName = "Policeman";
         side = 1;
-        faction = "b_altisacf";
+        faction = "B_ALtisACF";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
 
-        uniformClass = "ACM_AAFGM_Clothes_AAF_DressUni";
+        uniformClass = "ACM_APD_Clothes_Blouse";
 
-        linkedItems[] = {"gm_ge_army_vest_80_officer","ACM_AAFGM_Headgear_Beret_MP","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"gm_ge_army_vest_80_officer","ACM_AAFGM_Headgear_Beret_MP","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"gm_ge_pol_vest_80_wht","ACM_APD_Cap","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"gm_ge_pol_vest_80_wht","ACM_APD_Cap","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"hgun_ACPC2_F"};
         respawnWeapons[] = {"hgun_ACPC2_F"};
@@ -2559,7 +2520,7 @@ class CfgVehicles {
         magazines[] = {"9Rnd_45ACP_Mag","9Rnd_45ACP_Mag"};
         respawnMagazines[] = {"9Rnd_45ACP_Mag","9Rnd_45ACP_Mag"};
 
-        ALiVE_orbatCreator_loadout[] = {{},{},{"hgun_ACPC2_F","","","",{"9Rnd_45ACP_Mag",9},{},""},{"ACM_AAFGM_Clothes_AAF_DressUni",{{"gm_gc_army_medkit",1},{"9Rnd_45ACP_Mag",5,9}}},{"gm_ge_army_vest_80_officer",{}},{},"ACM_AAFGM_Headgear_Beret_MP","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{},{},{"hgun_ACPC2_F","","","",{"9Rnd_45ACP_Mag",8},{},""},{"ACM_APD_Clothes_Blouse",{{"gm_gc_army_medkit",1},{"9Rnd_45ACP_Mag",4,8}}},{"gm_ge_pol_vest_80_wht",{}},{},"ACM_APD_Cap","G_Aviator",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -2588,8 +2549,8 @@ class CfgVehicles {
 
         uniformClass = "ACM_AAFGM_Clothes_BDU_2";
 
-        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"gm_m16a1_blk","gm_fim43_oli"};
         respawnWeapons[] = {"gm_m16a1_blk","gm_fim43_oli"};
@@ -2597,7 +2558,7 @@ class CfgVehicles {
         magazines[] = {"30Rnd_556x45_Stanag","gm_1Rnd_70mm_he_m585_fim43","30Rnd_556x45_Stanag"};
         respawnMagazines[] = {"30Rnd_556x45_Stanag","gm_1Rnd_70mm_he_m585_fim43","30Rnd_556x45_Stanag"};
 
-        ALiVE_orbatCreator_loadout[] = {{"gm_m16a1_blk","","","",{"30Rnd_556x45_Stanag",30},{},""},{"gm_fim43_oli","","","",{"gm_1Rnd_70mm_he_m585_fim43",1},{},""},{},{"ACM_AAFGM_Clothes_BDU_2",{{"gm_gc_army_medkit",1},{"30Rnd_556x45_Stanag",3,30}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{{"30Rnd_556x45_Stanag",2,30},{"gm_1Rnd_70mm_he_m585_fim43",1,1}}},{},"UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","gm_gc_army_facewear_dustglasses",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"gm_m16a1_blk","","","",{"30Rnd_556x45_Stanag",30},{},""},{"gm_fim43_oli","","","",{"gm_1Rnd_70mm_he_m585_fim43",1},{},""},{},{"ACM_AAFGM_Clothes_BDU_2",{{"gm_gc_army_medkit",1},{"30Rnd_556x45_Stanag",3,30}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{{"30Rnd_556x45_Stanag",2,30},{"gm_1Rnd_70mm_he_m585_fim43",1,1}}},{}," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","gm_gc_army_facewear_dustglasses",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -2626,8 +2587,8 @@ class CfgVehicles {
 
         uniformClass = "ACM_AAFGM_Clothes_AFU_autumn";
 
-        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"gm_m16a2_blk"};
         respawnWeapons[] = {"gm_m16a2_blk"};
@@ -2637,7 +2598,7 @@ class CfgVehicles {
 
         backpack = "gm_backpack_t10_parachute";
 
-        ALiVE_orbatCreator_loadout[] = {{"gm_m16a2_blk","","","",{"30Rnd_556x45_Stanag",30},{},""},{},{},{"ACM_AAFGM_Clothes_AFU_autumn",{{"gm_gc_army_medkit",1},{"30Rnd_556x45_Stanag",3,30}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{{"30Rnd_556x45_Stanag",5,30}}},{"gm_backpack_t10_parachute",{}},"UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","gm_headgear_foliage_summer_grass_03",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"gm_m16a2_blk","","","",{"30Rnd_556x45_Stanag",30},{},""},{},{},{"ACM_AAFGM_Clothes_AFU_autumn",{{"gm_gc_army_medkit",1},{"30Rnd_556x45_Stanag",3,30}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{{"30Rnd_556x45_Stanag",5,30}}},{"gm_backpack_t10_parachute",{}}," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","gm_headgear_foliage_summer_grass_03",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -2666,8 +2627,8 @@ class CfgVehicles {
 
         uniformClass = "ACM_AAFGM_Clothes_BDU_2";
 
-        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"};
-        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"};
+        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"};
+        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"};
 
         weapons[] = {"gm_g3a3_oli"};
         respawnWeapons[] = {"gm_g3a3_oli"};
@@ -2675,7 +2636,7 @@ class CfgVehicles {
         magazines[] = {"gm_20Rnd_762x51mm_B_DM111_g3_blk","gm_20Rnd_762x51mm_B_DM111_g3_blk"};
         respawnMagazines[] = {"gm_20Rnd_762x51mm_B_DM111_g3_blk","gm_20Rnd_762x51mm_B_DM111_g3_blk"};
 
-        ALiVE_orbatCreator_loadout[] = {{"gm_g3a3_oli","","","",{"gm_20Rnd_762x51mm_B_DM111_g3_blk",20},{},""},{},{},{"ACM_AAFGM_Clothes_BDU_2",{{"gm_gc_army_medkit",1},{"gm_20Rnd_762x51mm_B_DM111_g3_blk",1,20},{"gm_handgrenade_frag_dm51a1",1,1}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{{"gm_20Rnd_762x51mm_B_DM111_g3_blk",7,20},{"gm_handgrenade_frag_dm51a1",1,1},{"gm_smokeshell_wht_dm25",2,1}}},{},"UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","G_Bandanna_oli",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"}};
+        ALiVE_orbatCreator_loadout[] = {{"gm_g3a3_oli","","","",{"gm_20Rnd_762x51mm_B_DM111_g3_blk",20},{},""},{},{},{"ACM_AAFGM_Clothes_BDU_2",{{"gm_gc_army_medkit",1},{"gm_20Rnd_762x51mm_B_DM111_g3_blk",1,20},{"gm_handgrenade_frag_dm51a1",1,1}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{{"gm_20Rnd_762x51mm_B_DM111_g3_blk",7,20},{"gm_handgrenade_frag_dm51a1",1,1},{"gm_smokeshell_wht_dm25",2,1}}},{}," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","G_Bandanna_oli",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"}};
 
 
         class EventHandlers : EventHandlers {
@@ -2704,8 +2665,8 @@ class CfgVehicles {
 
         uniformClass = "ACM_AAFGM_Clothes_BDU_2";
 
-        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"};
-        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"};
+        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"};
+        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"};
 
         weapons[] = {"AAFGM_c7a1_Optic"};
         respawnWeapons[] = {"AAFGM_c7a1_Optic"};
@@ -2713,7 +2674,7 @@ class CfgVehicles {
         magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag"};
         respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag"};
 
-        ALiVE_orbatCreator_loadout[] = {{"AAFGM_c7a1_Optic","","","gm_c79a1_oli",{"30Rnd_556x45_Stanag",30},{},""},{},{},{"ACM_AAFGM_Clothes_BDU_2",{{"gm_gc_army_medkit",1},{"30Rnd_556x45_Stanag",3,30}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{{"30Rnd_556x45_Stanag",5,30},{"gm_handgrenade_frag_dm51a1",2,1},{"gm_smokeshell_wht_dm25",2,1}}},{},"UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","G_Bandanna_oli",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"}};
+        ALiVE_orbatCreator_loadout[] = {{"AAFGM_c7a1_Optic","","","gm_c79a1_oli",{"30Rnd_556x45_Stanag",30},{},""},{},{},{"ACM_AAFGM_Clothes_BDU_2",{{"gm_gc_army_medkit",1},{"30Rnd_556x45_Stanag",3,30}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{{"30Rnd_556x45_Stanag",5,30},{"gm_handgrenade_frag_dm51a1",2,1},{"gm_smokeshell_wht_dm25",2,1}}},{}," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","G_Bandanna_oli",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"}};
 
 
         class EventHandlers : EventHandlers {
@@ -2742,8 +2703,8 @@ class CfgVehicles {
 
         uniformClass = "ACM_AAFGM_Clothes_BDU";
 
-        linkedItems[] = {"ACM_AAFGM_Vest_Lizard","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"};
-        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"};
+        linkedItems[] = {"ACM_AAFGM_Vest_Lizard"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"};
+        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"};
 
         weapons[] = {"AAFGM_c7a1_Optic"};
         respawnWeapons[] = {"AAFGM_c7a1_Optic"};
@@ -2751,7 +2712,7 @@ class CfgVehicles {
         magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag"};
         respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag"};
 
-        ALiVE_orbatCreator_loadout[] = {{"AAFGM_c7a1_Optic","","","gm_c79a1_oli",{"30Rnd_556x45_Stanag",30},{},""},{},{},{"ACM_AAFGM_Clothes_BDU",{{"gm_gc_army_medkit",1},{"30Rnd_556x45_Stanag",3,30}}},{"ACM_AAFGM_Vest_Lizard",{{"30Rnd_556x45_Stanag",5,30},{"gm_handgrenade_frag_dm51a1",2,1},{"gm_smokeshell_wht_dm25",2,1}}},{},"UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","G_Bandanna_aviator",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"}};
+        ALiVE_orbatCreator_loadout[] = {{"AAFGM_c7a1_Optic","","","gm_c79a1_oli",{"30Rnd_556x45_Stanag",30},{},""},{},{},{"ACM_AAFGM_Clothes_BDU",{{"gm_gc_army_medkit",1},{"30Rnd_556x45_Stanag",3,30}}},{"ACM_AAFGM_Vest_Lizard",{{"30Rnd_556x45_Stanag",5,30},{"gm_handgrenade_frag_dm51a1",2,1},{"gm_smokeshell_wht_dm25",2,1}}},{}," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","G_Bandanna_aviator",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"}};
 
 
         class EventHandlers : EventHandlers {
@@ -2818,8 +2779,8 @@ class CfgVehicles {
 
         uniformClass = "ACM_AAFGM_Clothes_BDU_2";
 
-        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"};
-        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"};
+        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"};
+        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"};
 
         weapons[] = {"gm_g3a3_oli","gm_pzf84_oli"};
         respawnWeapons[] = {"gm_g3a3_oli","gm_pzf84_oli"};
@@ -2829,7 +2790,7 @@ class CfgVehicles {
 
         backpack = "AAFGM_AT_Pack";
 
-        ALiVE_orbatCreator_loadout[] = {{"gm_g3a3_oli","","","",{"gm_20Rnd_762x51mm_B_DM111_g3_blk",20},{},""},{"gm_pzf84_oli","","","",{},{},""},{},{"ACM_AAFGM_Clothes_BDU_2",{{"gm_gc_army_medkit",1},{"gm_20Rnd_762x51mm_B_DM111_g3_blk",1,20},{"gm_handgrenade_frag_dm51a1",1,1}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{{"gm_20Rnd_762x51mm_B_DM111_g3_blk",7,20},{"gm_handgrenade_frag_dm51a1",1,1},{"gm_smokeshell_wht_dm25",2,1}}},{"AAFGM_AT_Pack",{{"gm_1Rnd_84x245mm_heat_t_DM22_carlgustaf",1,1},{"gm_1Rnd_84x245mm_heat_t_DM32_carlgustaf",1,1},{"gm_1Rnd_84x245mm_ILLUM_DM16_carlgustaf",1,1}}},"UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","G_Bandanna_oli",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"}};
+        ALiVE_orbatCreator_loadout[] = {{"gm_g3a3_oli","","","",{"gm_20Rnd_762x51mm_B_DM111_g3_blk",20},{},""},{"gm_pzf84_oli","","","",{},{},""},{},{"ACM_AAFGM_Clothes_BDU_2",{{"gm_gc_army_medkit",1},{"gm_20Rnd_762x51mm_B_DM111_g3_blk",1,20},{"gm_handgrenade_frag_dm51a1",1,1}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{{"gm_20Rnd_762x51mm_B_DM111_g3_blk",7,20},{"gm_handgrenade_frag_dm51a1",1,1},{"gm_smokeshell_wht_dm25",2,1}}},{"AAFGM_AT_Pack",{{"gm_1Rnd_84x245mm_heat_t_DM22_carlgustaf",1,1},{"gm_1Rnd_84x245mm_heat_t_DM32_carlgustaf",1,1},{"gm_1Rnd_84x245mm_ILLUM_DM16_carlgustaf",1,1}}}," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","G_Bandanna_oli",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"}};
 
 
         class EventHandlers : EventHandlers {
@@ -2898,8 +2859,8 @@ class CfgVehicles {
 
         uniformClass = "ACM_AAFGM_Clothes_BDU_2";
 
-        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_MachGunner","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"};
-        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_MachGunner","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"};
+        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_MachGunner"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"};
+        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_MachGunner"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"};
 
         weapons[] = {"gm_mg3_blk"};
         respawnWeapons[] = {"gm_mg3_blk"};
@@ -2907,7 +2868,7 @@ class CfgVehicles {
         magazines[] = {"gm_120Rnd_762x51mm_B_T_DM21_mg3_grn","gm_120Rnd_762x51mm_B_T_DM21_mg3_grn"};
         respawnMagazines[] = {"gm_120Rnd_762x51mm_B_T_DM21_mg3_grn","gm_120Rnd_762x51mm_B_T_DM21_mg3_grn"};
 
-        ALiVE_orbatCreator_loadout[] = {{"gm_mg3_blk","","","",{"gm_120Rnd_762x51mm_B_T_DM21_mg3_grn",120},{},""},{},{},{"ACM_AAFGM_Clothes_BDU_2",{{"gm_gc_army_medkit",1},{"gm_handgrenade_frag_dm51a1",1,1},{"gm_smokeshell_wht_dm25",3,1}}},{"ACM_AAFGM_Vest_Lizard_MachGunner",{{"gm_120Rnd_762x51mm_B_T_DM21_mg3_grn",2,120},{"gm_smokeshell_wht_dm25",2,1}}},{},"UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","G_Bandanna_aviator",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"}};
+        ALiVE_orbatCreator_loadout[] = {{"gm_mg3_blk","","","",{"gm_120Rnd_762x51mm_B_T_DM21_mg3_grn",120},{},""},{},{},{"ACM_AAFGM_Clothes_BDU_2",{{"gm_gc_army_medkit",1},{"gm_handgrenade_frag_dm51a1",1,1},{"gm_smokeshell_wht_dm25",3,1}}},{"ACM_AAFGM_Vest_Lizard_MachGunner",{{"gm_120Rnd_762x51mm_B_T_DM21_mg3_grn",2,120},{"gm_smokeshell_wht_dm25",2,1}}},{}," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","G_Bandanna_aviator",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"}};
 
 
         class EventHandlers : EventHandlers {
@@ -2936,8 +2897,8 @@ class CfgVehicles {
 
         uniformClass = "ACM_AAFGM_Clothes_BDU_2";
 
-        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"};
-        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"};
+        linkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"};
+        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard_rifleman"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"};
 
         weapons[] = {"gm_g3a3_oli"};
         respawnWeapons[] = {"gm_g3a3_oli"};
@@ -2947,7 +2908,7 @@ class CfgVehicles {
 
         backpack = "AFGM_Demo_Pack";
 
-        ALiVE_orbatCreator_loadout[] = {{"gm_g3a3_oli","","","",{"gm_20Rnd_762x51mm_B_DM111_g3_blk",20},{},""},{},{},{"ACM_AAFGM_Clothes_BDU_2",{{"gm_gc_army_medkit",1},{"gm_20Rnd_762x51mm_B_DM111_g3_blk",1,20},{"gm_handgrenade_frag_dm51a1",1,1}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{{"gm_20Rnd_762x51mm_B_DM111_g3_blk",7,20},{"gm_handgrenade_frag_dm51a1",1,1},{"gm_smokeshell_wht_dm25",2,1}}},{"AFGM_Demo_Pack",{{"ToolKit",1},{"MineDetector",1},{"gm_mine_ap_dm31",3,1},{"ClaymoreDirectionalMine_Remote_Mag",2,1},{"APERSTripMine_Wire_Mag",2,1},{"gm_explosive_plnp_charge",1,1}}},"UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","G_Bandanna_oli",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"}};
+        ALiVE_orbatCreator_loadout[] = {{"gm_g3a3_oli","","","",{"gm_20Rnd_762x51mm_B_DM111_g3_blk",20},{},""},{},{},{"ACM_AAFGM_Clothes_BDU_2",{{"gm_gc_army_medkit",1},{"gm_20Rnd_762x51mm_B_DM111_g3_blk",1,20},{"gm_handgrenade_frag_dm51a1",1,1}}},{"ACM_AAFGM_Vest_Lizard_rifleman",{{"gm_20Rnd_762x51mm_B_DM111_g3_blk",7,20},{"gm_handgrenade_frag_dm51a1",1,1},{"gm_smokeshell_wht_dm25",2,1}}},{"AFGM_Demo_Pack",{{"ToolKit",1},{"MineDetector",1},{"gm_mine_ap_dm31",3,1},{"ClaymoreDirectionalMine_Remote_Mag",2,1},{"APERSTripMine_Wire_Mag",2,1},{"gm_explosive_plnp_charge",1,1}}}," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","G_Bandanna_oli",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","NVGoggles_INDEP"}};
 
 
         class EventHandlers : EventHandlers {
@@ -3054,8 +3015,8 @@ class CfgVehicles {
 
         uniformClass = "ACM_AAFGM_Clothes_CBRN_1";
 
-        linkedItems[] = {"ACM_AAFGM_Vest_M84","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"ACM_AAFGM_Vest_M84","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"ACM_AAFGM_Vest_M84"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"ACM_AAFGM_Vest_M84"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"gm_m16a2_blk"};
         respawnWeapons[] = {"gm_m16a2_blk"};
@@ -3065,7 +3026,7 @@ class CfgVehicles {
 
         backpack = "B_SCBA_01_F";
 
-        ALiVE_orbatCreator_loadout[] = {{"gm_m16a2_blk","","","",{"30Rnd_556x45_Stanag",30},{},""},{},{},{"ACM_AAFGM_Clothes_CBRN_1",{{"FirstAidKit",1},{"30Rnd_556x45_Stanag",1,30},{"9Rnd_45ACP_Mag",1,9},{"SmokeShellGreen",1,1},{"Chemlight_green",2,1}}},{"ACM_AAFGM_Vest_M84",{{"30Rnd_556x45_Stanag",8,30},{"9Rnd_45ACP_Mag",2,9},{"HandGrenade",2,1},{"SmokeShell",1,1}}},{"B_SCBA_01_F",{}},"UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","G_RegulatorMask_F",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"gm_m16a2_blk","","","",{"30Rnd_556x45_Stanag",30},{},""},{},{},{"ACM_AAFGM_Clothes_CBRN_1",{{"FirstAidKit",1},{"30Rnd_556x45_Stanag",1,30},{"9Rnd_45ACP_Mag",1,9},{"SmokeShellGreen",1,1},{"Chemlight_green",2,1}}},{"ACM_AAFGM_Vest_M84",{{"30Rnd_556x45_Stanag",8,30},{"9Rnd_45ACP_Mag",2,9},{"HandGrenade",2,1},{"SmokeShell",1,1}}},{"B_SCBA_01_F",{}}," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","G_RegulatorMask_F",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -3094,8 +3055,8 @@ class CfgVehicles {
 
         uniformClass = "ACM_AAFGM_Clothes_CBRN_2";
 
-        linkedItems[] = {"ACM_AAFGM_Vest_Lizard","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard","UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        linkedItems[] = {"ACM_AAFGM_Vest_Lizard"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"ACM_AAFGM_Vest_Lizard"," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         weapons[] = {"gm_g3a4_blk"};
         respawnWeapons[] = {"gm_g3a4_blk"};
@@ -3105,7 +3066,7 @@ class CfgVehicles {
 
         backpack = "B_SCBA_01_F";
 
-        ALiVE_orbatCreator_loadout[] = {{"gm_g3a4_blk","","","",{"gm_20Rnd_762x51mm_B_DM111_g3_blk",20},{},""},{},{},{"ACM_AAFGM_Clothes_CBRN_2",{{"gm_gc_army_medkit",1},{"gm_handgrenade_frag_dm51a1",1,1},{"gm_20Rnd_762x51mm_B_DM111_g3_blk",1,20}}},{"ACM_AAFGM_Vest_Lizard",{{"gm_20Rnd_762x51mm_B_DM111_g3_blk",7,20}}},{"B_SCBA_01_F",{}},"UK3CB_CW_US_B_LATE_H_PASGT_01_WDL","G_RegulatorMask_F",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"gm_g3a4_blk","","","",{"gm_20Rnd_762x51mm_B_DM111_g3_blk",20},{},""},{},{},{"ACM_AAFGM_Clothes_CBRN_2",{{"gm_gc_army_medkit",1},{"gm_handgrenade_frag_dm51a1",1,1},{"gm_20Rnd_762x51mm_B_DM111_g3_blk",1,20}}},{"ACM_AAFGM_Vest_Lizard",{{"gm_20Rnd_762x51mm_B_DM111_g3_blk",7,20}}},{"B_SCBA_01_F",{}}," class B_AltisACF_Rifleman_Altis_01 : AAFGM_soldier_OCimport_02 {","G_RegulatorMask_F",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -3180,7 +3141,7 @@ class CfgVehicles {
 
     };
 
-    class B_AltisACF_A143_Buzzard_CAS_Altis_01 : ACM_AAFGM_Alca_OCimport_02 {
+       class B_AltisACF_A143_Buzzard_CAS_Altis_01 : ACM_AAFGM_Alca_OCimport_02 {
         author = "Commander";
         scope = 2;
         scopeCurator = 2;
@@ -3194,15 +3155,18 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'ACM_90AAF\Vehicles\Alca\ACM_AAFGM_Alca_Body_GREY1_CO.paa'];_unit setObjectTextureGlobal [1,'ACM_90AAF\Vehicles\Alca\ACM_AAFGM_Alca_Body_GREY2_CO.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "acm_aafgm_grey";
 
     };
+
+};
 
     class B_AltisACF_TPz_1A0_Command_Altis_01 : ACM_AAFGM_Fuchs_Command_OCimport_02 {
         author = "Commander";
