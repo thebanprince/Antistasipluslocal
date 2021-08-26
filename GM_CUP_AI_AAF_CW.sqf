@@ -426,7 +426,7 @@ _eliteLoadoutData setVariable ["sidearms", [
 ///////////////////////////////
 
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_policeLoadoutData setVariable ["uniforms", ["U_B_GEN_Soldier_F", "U_B_GEN_Commander_F"]];
+_policeLoadoutData setVariable ["uniforms", ["ACM_AAFGM_Clothes_AFU_Snakeskin"]];
 _policeLoadoutData setVariable ["vests", ["V_TacVest_blk_POLICE"]];
 _policeLoadoutData setVariable ["helmets", ["H_Cap_police", "H_PASGT_basic_black_F", "H_PASGT_basic_blue_F"]];
 _policeLoadoutData setVariable ["smgs", [
@@ -444,15 +444,7 @@ _policeLoadoutData setVariable ["sidearms", ["hgun_Rook40_F"]];
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
 _militiaLoadoutData setVariable ["uniforms", [
-	"CUP_U_B_BAF_DDPM_UBACSLONGKNEE_Gloves", 
-	"CUP_U_B_BAF_DDPM_UBACSROLLED_Gloves", 
-	"CUP_U_B_BAF_DDPM_UBACSTSHIRT_Gloves", 
-	"CUP_U_B_BAF_DDPM_UBACSLONG", 
-	"CUP_U_B_BAF_DDPM_UBACSLONGKNEE", 
-	"CUP_U_B_BAF_DDPM_UBACSROLLED", 
-	"CUP_U_B_BAF_DDPM_UBACSROLLEDKNEE", 
-	"CUP_U_B_BAF_DDPM_UBACSTSHIRT", 
-	"CUP_U_B_BAF_DDPM_UBACSTSHIRTKNEE"
+	"ACM_AAFGM_Clothes_AFU_Snakeskin"
 ]];		
 _militiaLoadoutData setVariable ["vests", ["CUP_V_B_BAF_DDPM_Osprey_Mk3_Pilot", "V_Chestrig_khk"]];			
 _militiaLoadoutData setVariable ["backpacks", ["B_AssaultPack_sgg", "B_TacticalPack_blk"]];		
