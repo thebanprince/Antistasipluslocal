@@ -5,7 +5,7 @@
 ["name", "ACF"] call _fnc_saveToTemplate; 						
 ["spawnMarkerName", "ACF Support Corridor"] call _fnc_saveToTemplate; 			
 
-["flag", "Flag_UK_F"] call _fnc_saveToTemplate; 						
+["flag", "flag_AltisColonial"] call _fnc_saveToTemplate; 						
 ["flagTexture", "\A3\Data_F\Flags\flag_AltisColonial_CO.paa"] call _fnc_saveToTemplate; 				
 ["flagMarkerType", "flag_AltisColonial"] call _fnc_saveToTemplate; 			
 
@@ -74,8 +74,8 @@
 	["other_official", "B_AltisACF_Officer_01"], 
 	["other_traitor", "B_AltisACF_Officer_01"], 
 	["other_pilot", "B_AltisACF_Pilot_Jet_01"], 
-	["police_squadleader", "APD_officer"], 
-	["police_standard", "APD_Police"] 
+	["police_squadleader", "B_BAltisACF_APD_Officer_01"], 
+	["police_standard", "B_BAltisACF_APD_Officer_01"] 
 ]] call _fnc_saveToTemplate; 
  
 //////////////////////////
@@ -307,7 +307,7 @@ _sfLoadoutData setVariable ["sidearms", [
 /////////////////////////////////
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_militaryLoadoutData setVariable ["uniforms", ["CUP_U_B_BAF_MTP_UBACSLONG_Gloves", "CUP_U_B_BAF_MTP_UBACSLONGKNEE_Gloves", "CUP_U_B_BAF_MTP_UBACSROLLED_Gloves", "CUP_U_B_BAF_MTP_UBACSTSHIRT_Gloves", "CUP_U_B_USArmy_ACU_OEFCP", "CUP_U_B_USArmy_ACU_Rolled_Gloves_OEFCP", "CUP_U_B_USArmy_ACU_Rolled_OEFCP"]];		
+_militaryLoadoutData setVariable ["uniforms", ["ACM_AAFGM_Clothes_AFU_Snakeskin"]];		
 _militaryLoadoutData setVariable ["vests", ["CUP_V_B_BAF_MTP_Osprey_Mk4_AutomaticRifleman", "CUP_V_B_BAF_MTP_Osprey_Mk4_Engineer", "CUP_V_B_BAF_MTP_Osprey_Mk4_Medic", "CUP_V_B_BAF_MTP_Osprey_Mk4_Rifleman"]];			
 _militaryLoadoutData setVariable ["Hvests", ["CUP_V_B_BAF_MTP_Osprey_Mk4_Scout"]];
 _militaryLoadoutData setVariable ["GLvests", ["CUP_V_B_BAF_MTP_Osprey_Mk4_Grenadier", "CUP_V_B_BAF_MTP_Osprey_Mk4_Officer"]];
@@ -372,7 +372,7 @@ _militaryLoadoutData setVariable ["sidearms", [
 //    Elite Loadout Data    //
 /////////////////////////////////
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_eliteLoadoutData setVariable ["uniforms", ["CUP_U_B_BAF_DDPM_UBACSLONGKNEE", "CUP_U_B_BAF_DDPM_UBACSROLLED", "CUP_U_B_BAF_DDPM_UBACSROLLEDKNEE", "CUP_U_B_BAF_DDPM_UBACSTSHIRT", "CUP_U_B_BAF_DDPM_UBACSTSHIRTKNEE"]];	
+_eliteLoadoutData setVariable ["uniforms", ["ACM_AAFGM_Clothes_AFU_Snakeskin"]];	
 _eliteLoadoutData setVariable ["vests", ["CUP_V_B_BAF_DDPM_Osprey_Mk3_AutomaticRifleman", "CUP_V_B_BAF_DDPM_Osprey_Mk3_Engineer", "CUP_V_B_BAF_DDPM_Osprey_Mk3_Medic", "CUP_V_B_BAF_DDPM_Osprey_Mk3_Officer", "CUP_V_B_BAF_DDPM_Osprey_Mk3_Rifleman"]];
 _eliteLoadoutData setVariable ["Hvests", ["CUP_V_B_BAF_DDPM_Osprey_Mk3_Scout"]];
 _eliteLoadoutData setVariable ["GLvests", ["CUP_V_B_BAF_DDPM_Osprey_Mk3_Grenadier"]];
@@ -426,15 +426,12 @@ _eliteLoadoutData setVariable ["sidearms", [
 ///////////////////////////////
 
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_policeLoadoutData setVariable ["uniforms", ["U_B_GEN_Soldier_F", "U_B_GEN_Commander_F"]];
-_policeLoadoutData setVariable ["vests", ["V_TacVest_blk_POLICE"]];
-_policeLoadoutData setVariable ["helmets", ["H_Cap_police", "H_PASGT_basic_black_F", "H_PASGT_basic_blue_F"]];
+_policeLoadoutData setVariable ["uniforms", ["ACM_APD_Clothes_3" "ACM_APD_Clothes_2"]];
+_policeLoadoutData setVariable ["vests", ["ACM_APD_VEST"]];
+_policeLoadoutData setVariable ["helmets", ["ACM_APD_Cap"]];
 _policeLoadoutData setVariable ["smgs", [
 ["CUP_smg_MP5A5", "", "", "", ["CUP_30Rnd_9x19_MP5"], [], ""],
 ["CUP_smg_MP5A5_flashlight", "", "", "", ["CUP_30Rnd_9x19_MP5"], [], ""],
-["CUP_smg_PS90_olive", "", "CUP_acc_Flashlight", "CUP_optic_HoloBlack", ["50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "CUP_50Rnd_570x28_Red_Tracer_P90_M"], [], ""],
-["CUP_smg_p90_black", "", "CUP_acc_Flashlight", "", ["50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "CUP_50Rnd_570x28_Red_Tracer_P90_M"], [], ""],
-["CUP_smg_p90_olive", "", "CUP_acc_Flashlight", "", ["50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "CUP_50Rnd_570x28_Red_Tracer_P90_M"], [], ""]
 ]];
 _policeLoadoutData setVariable ["sidearms", ["hgun_Rook40_F"]];
 
@@ -444,15 +441,9 @@ _policeLoadoutData setVariable ["sidearms", ["hgun_Rook40_F"]];
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
 _militiaLoadoutData setVariable ["uniforms", [
-	"CUP_U_B_BAF_DDPM_UBACSLONGKNEE_Gloves", 
-	"CUP_U_B_BAF_DDPM_UBACSROLLED_Gloves", 
-	"CUP_U_B_BAF_DDPM_UBACSTSHIRT_Gloves", 
-	"CUP_U_B_BAF_DDPM_UBACSLONG", 
-	"CUP_U_B_BAF_DDPM_UBACSLONGKNEE", 
-	"CUP_U_B_BAF_DDPM_UBACSROLLED", 
-	"CUP_U_B_BAF_DDPM_UBACSROLLEDKNEE", 
-	"CUP_U_B_BAF_DDPM_UBACSTSHIRT", 
-	"CUP_U_B_BAF_DDPM_UBACSTSHIRTKNEE"
+	"ACM_AAFGM_Clothes_AFU", 
+    "ACM_AAFGM_Clothes_AFU_autumn", 
+	"ACM_AAFGM_Clothes_AFU_rolled", 
 ]];		
 _militiaLoadoutData setVariable ["vests", ["CUP_V_B_BAF_DDPM_Osprey_Mk3_Pilot", "V_Chestrig_khk"]];			
 _militiaLoadoutData setVariable ["backpacks", ["B_AssaultPack_sgg", "B_TacticalPack_blk"]];		
@@ -498,15 +489,15 @@ _militiaLoadoutData setVariable ["sidearms", ["CUP_hgun_Colt1911"]];
 //////////////////////////
 
 private _crewLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData; 
-_crewLoadoutData setVariable ["uniforms", ["CUP_U_B_BAF_MTP_UBACSROLLED"]];			
-_crewLoadoutData setVariable ["vests", ["CUP_V_B_BAF_MTP_Osprey_Mk4_Crewman"]];				
+_crewLoadoutData setVariable ["uniforms", ["cwr3_b_uniform_tanksuit"]];			
+_crewLoadoutData setVariable ["vests", ["cwr3_b_uk_vest_58webbing"]];				
 _crewLoadoutData setVariable ["helmets", ["CUP_H_BAF_MTP_Mk6_CREW_PRR"]];			
 
 
 private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
-_pilotLoadoutData setVariable ["uniforms", ["CUP_U_B_BAF_MTP_UBACSLONG"]];
-_pilotLoadoutData setVariable ["vests", ["CUP_V_B_BAF_DDPM_Osprey_Mk3_Pilot"]];
-_pilotLoadoutData setVariable ["helmets", ["CUP_H_SPH4", "CUP_H_SPH4_visor"]];
+_pilotLoadoutData setVariable ["uniforms", ["cwr3_b_uk_uniform_pilot"]];
+_pilotLoadoutData setVariable ["vests", ["cwr3_b_vest_pilot"]];
+_pilotLoadoutData setVariable ["helmets", ["cwr3_b_headgear_pilot"]];
 
 // ##################### DO NOT TOUCH ANYTHING BELOW THIS LINE #####################
 
