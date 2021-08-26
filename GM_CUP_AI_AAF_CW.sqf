@@ -377,7 +377,7 @@ _eliteLoadoutData setVariable ["vests", ["CUP_V_B_BAF_DDPM_Osprey_Mk3_AutomaticR
 _eliteLoadoutData setVariable ["Hvests", ["CUP_V_B_BAF_DDPM_Osprey_Mk3_Scout"]];
 _eliteLoadoutData setVariable ["GLvests", ["CUP_V_B_BAF_DDPM_Osprey_Mk3_Grenadier"]];
 _eliteLoadoutData setVariable ["backpacks", ["B_TacticalPack_mcamo","B_Kitbag_cbr", "CUP_B_Predator_Radio_MTP", "CUP_B_Predator_MTP"]];		
-_eliteLoadoutData setVariable ["helmets", ["CUP_H_BAF_DDPM_Mk6_EMPTY", "CUP_H_BAF_DDPM_Mk6_EMPTY_PRR", "CUP_H_BAF_DDPM_Mk6_GLASS_PRR", "CUP_H_BAF_DDPM_Mk6_GOGGLES_PRR", "CUP_H_BAF_DDPM_Mk6_NETTING_PRR"]];		
+_eliteLoadoutData setVariable ["helmets", ["cwr3_b_uk_headgear_mk5_helmet", "cwr3_b_uk_headgear_mk5_helmet_net", "cwr3_b_uk_headgear_mk5_helmet_dpm_net"]];		
 _eliteLoadoutData setVariable ["ATLaunchers", ["CUP_launch_NLAW"]];  
 _eliteLoadoutData setVariable ["lightATLaunchers", [
 	["CUP_launch_MAAWS", "", "", "CUP_optic_MAAWS_Scope", ["MRAWS_HEAT_F", "MRAWS_HE_F"], [], ""]
@@ -448,7 +448,7 @@ _militiaLoadoutData setVariable ["uniforms", [
 ]];		
 _militiaLoadoutData setVariable ["vests", ["CUP_V_B_BAF_DDPM_Osprey_Mk3_Pilot", "V_Chestrig_khk"]];			
 _militiaLoadoutData setVariable ["backpacks", ["B_AssaultPack_sgg", "B_TacticalPack_blk"]];		
-_militiaLoadoutData setVariable ["helmets", ["CUP_H_BAF_DDPM_Mk6_EMPTY", "H_Bandanna_sand", "H_Booniehat_tan"]];		
+_militiaLoadoutData setVariable ["helmets", ["cwr3_b_uk_headgear_mk5_helmet", "cwr3_b_uk_headgear_mk5_helmet_net", "cwr3_b_uk_headgear_mk5_helmet_dpm_net"]];		
 _militiaLoadoutData setVariable ["lightATLaunchers", [
 	["CUP_launch_MAAWS", "", "", "", ["MRAWS_HE_F", "MRAWS_HEAT55_F"], [], ""]
 ]];
