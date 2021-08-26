@@ -74,8 +74,8 @@
 	["other_official", "B_AltisACF_Officer_01"], 
 	["other_traitor", "B_AltisACF_Officer_01"], 
 	["other_pilot", "B_AltisACF_Pilot_Jet_01"], 
-	["police_squadleader", "APD_officer"], 
-	["police_standard", "APD_Police"] 
+	["police_squadleader", "B_BAltisACF_APD_Officer_01"], 
+	["police_standard", "B_BAltisACF_APD_Officer_01"] 
 ]] call _fnc_saveToTemplate; 
  
 //////////////////////////
