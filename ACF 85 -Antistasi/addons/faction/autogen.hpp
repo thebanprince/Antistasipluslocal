@@ -2410,5 +2410,43 @@ class CfgVehicles {
         ALiVE_orbatCreator_owned = 1;
 
     };
-
+    
+    class B_BAltisACF_APD_Officer_01 : B_AltisACF_Officer_01 { 
+        author = "Commander"; 
+        scope = 2; 
+        scopeCurator = 2; 
+        displayName = "APD Officer"; 
+        side = 1; 
+        faction = "B_AltisACF"; 
+ 
+        identityTypes[] = {"Head_Greek","LanguageGRE_F"}; 
+ 
+        uniformClass = "ACM_APD_2_Clothes"; 
+ 
+        linkedItems[] = {"ACM_APD_Vest","ACM_APD_Cap","ItemMap","ItemRadio","ItemCompass","ItemWatch"}; 
+        respawnlinkedItems[] = {"ACM_APD_Vest","ACM_APD_Cap","ItemMap","ItemRadio","ItemCompass","ItemWatch"}; 
+ 
+        weapons[] = {"CUP_smg_MP5A5_flashlight","CUP_hgun_Browning_HP"}; 
+        respawnWeapons[] = {"CUP_smg_MP5A5_flashlight","CUP_hgun_Browning_HP"}; 
+ 
+        magazines[] = {"CUP_30Rnd_9x19_MP5","CUP_13Rnd_9x19_Browning_HP","CUP_30Rnd_9x19_MP5","CUP_13Rnd_9x19_Browning_HP"}; 
+        respawnMagazines[] = {"CUP_30Rnd_9x19_MP5","CUP_13Rnd_9x19_Browning_HP","CUP_30Rnd_9x19_MP5","CUP_13Rnd_9x19_Browning_HP"}; 
+ 
+        ALiVE_orbatCreator_loadout[] = {{"CUP_smg_MP5A5_flashlight","","","",{"CUP_30Rnd_9x19_MP5",30},{},""},{},{"CUP_hgun_Browning_HP","","","",{"CUP_13Rnd_9x19_Browning_HP",13},{},""},{"ACM_APD_2_Clothes",{{"FirstAidKit",1},{"CUP_30Rnd_9x19_MP5",1,30}}},{"ACM_APD_Vest",{{"CUP_13Rnd_9x19_Browning_HP",3,13},{"CUP_HandGrenade_L109A1_HE",2,1},{"SmokeShell",1,1}}},{},"ACM_APD_Cap","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}}; 
+ 
+ 
+        class EventHandlers : EventHandlers { 
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {}; 
+ 
+            class ALiVE_orbatCreator { 
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};"; 
+            }; 
+ 
+        }; 
+ 
+        // custom attributes (do not delete) 
+        ALiVE_orbatCreator_owned = 1; 
+ 
+    }; 
+ 
 };
