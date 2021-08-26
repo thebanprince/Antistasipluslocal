@@ -307,7 +307,7 @@ _sfLoadoutData setVariable ["sidearms", [
 /////////////////////////////////
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_militaryLoadoutData setVariable ["uniforms", ["CUP_U_B_BAF_MTP_UBACSLONG_Gloves", "CUP_U_B_BAF_MTP_UBACSLONGKNEE_Gloves", "CUP_U_B_BAF_MTP_UBACSROLLED_Gloves", "CUP_U_B_BAF_MTP_UBACSTSHIRT_Gloves", "CUP_U_B_USArmy_ACU_OEFCP", "CUP_U_B_USArmy_ACU_Rolled_Gloves_OEFCP", "CUP_U_B_USArmy_ACU_Rolled_OEFCP"]];		
+_militaryLoadoutData setVariable ["uniforms", ["ACM_AAFGM_Clothes_AFU_Snakeskin"]];		
 _militaryLoadoutData setVariable ["vests", ["CUP_V_B_BAF_MTP_Osprey_Mk4_AutomaticRifleman", "CUP_V_B_BAF_MTP_Osprey_Mk4_Engineer", "CUP_V_B_BAF_MTP_Osprey_Mk4_Medic", "CUP_V_B_BAF_MTP_Osprey_Mk4_Rifleman"]];			
 _militaryLoadoutData setVariable ["Hvests", ["CUP_V_B_BAF_MTP_Osprey_Mk4_Scout"]];
 _militaryLoadoutData setVariable ["GLvests", ["CUP_V_B_BAF_MTP_Osprey_Mk4_Grenadier", "CUP_V_B_BAF_MTP_Osprey_Mk4_Officer"]];
@@ -372,7 +372,7 @@ _militaryLoadoutData setVariable ["sidearms", [
 //    Elite Loadout Data    //
 /////////////////////////////////
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_eliteLoadoutData setVariable ["uniforms", ["CUP_U_B_BAF_DDPM_UBACSLONGKNEE", "CUP_U_B_BAF_DDPM_UBACSROLLED", "CUP_U_B_BAF_DDPM_UBACSROLLEDKNEE", "CUP_U_B_BAF_DDPM_UBACSTSHIRT", "CUP_U_B_BAF_DDPM_UBACSTSHIRTKNEE"]];	
+_eliteLoadoutData setVariable ["uniforms", ["ACM_AAFGM_Clothes_AFU_Snakeskin"]];	
 _eliteLoadoutData setVariable ["vests", ["CUP_V_B_BAF_DDPM_Osprey_Mk3_AutomaticRifleman", "CUP_V_B_BAF_DDPM_Osprey_Mk3_Engineer", "CUP_V_B_BAF_DDPM_Osprey_Mk3_Medic", "CUP_V_B_BAF_DDPM_Osprey_Mk3_Officer", "CUP_V_B_BAF_DDPM_Osprey_Mk3_Rifleman"]];
 _eliteLoadoutData setVariable ["Hvests", ["CUP_V_B_BAF_DDPM_Osprey_Mk3_Scout"]];
 _eliteLoadoutData setVariable ["GLvests", ["CUP_V_B_BAF_DDPM_Osprey_Mk3_Grenadier"]];
